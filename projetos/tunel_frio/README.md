@@ -10,8 +10,7 @@ De forma geral, a metodologia de projeto adotada está em linha com as propostas
     - v) integração de sistemas.    
 Além das etapas citas, a metodologia adotada envolve a abordagem evolucionária, conforme figura abaixo:
 
-[<center><img src="projetos/tunel_frio/assets/metodologia.png"></center>]()
-
+[<center><img src="/projetos/tunel_frio/assets/metodologia.png"></center>]()
 
 Essa abordagem, conforme relatado em [1], é um ciclo de vida dinâmico de desenvolvimento, envolvendo a prototipação, que após sucessivas interações e modificações no protótipo obtêm-se os resultados desejados, sendo que  essa filosofia de desenvolvimento reflete o espírito da engenharia, que procura aplicar os conhecimentos científicos e os procedimentos empíricos à criação de equipamentos, sistemas, métodos e processos.      
 
@@ -45,7 +44,7 @@ Essa abordagem, conforme relatado em [1], é um ciclo de vida dinâmico de desen
 
 
 ## :movie_camera: Imagens e/ou vídeos do projeto em funcionamento (se possível)
-[<center><img src="projetos/tunel_frio/assets/setup.png"></center>]()
+[<center><img src="/projetos/tunel_frio/assets/setup.png"></center>]()
 
 ---
 
