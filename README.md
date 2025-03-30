@@ -14,7 +14,7 @@ Cada projeto tem sua própria pasta, contendo:
 - Outros recursos, tais como : imagens, videos, entre outros (\assets).    
 ---
 
-[<center><img src="projetos/tunel_frio/assets/setup.png"></center>](https://youtu.be/aS0tE-y4iuQ?si=hzk-_8a9BiZnrDN6)
+[<center><img src="projetos/tunel_frio/assets/bitdoglab.png"></center>](https://youtu.be/aS0tE-y4iuQ?si=hzk-_8a9BiZnrDN6)
 
 ## 📂 Lista de Projetos
 
