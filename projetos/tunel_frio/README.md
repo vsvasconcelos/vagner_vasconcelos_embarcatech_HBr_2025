@@ -49,7 +49,8 @@ Essa abordagem, conforme relatado em [1], é um ciclo de vida dinâmico de desen
 ---
 
 
-## :chart_with_upwards_trend: Resultados esperados ou obtidos
+## :chart_with_upwards_trend: Resultados esperados ou obtidos     
+
 Conforme resultados obtidos, os próximos passos envolve:    
 i) conseguir um outro sensor DHT22 para verificar se os problemas encontrados estão no sensor ou não; e    
 ii) pesquisar a razão das medidas iniciais do sensor de ultrassom estarem incorretas.    
