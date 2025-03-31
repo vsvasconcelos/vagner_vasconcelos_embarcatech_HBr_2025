@@ -26,6 +26,12 @@ Cada projeto tem sua própria pasta, contendo:
 ##   :dart: Diário de Bordo (Reflexões e Aprendizados)    
 Ao longo desta jornada, esta seção será atualizada com os principais aprendizados, desafios enfrentados e soluções encontradas.   
 
-### Semana 1
+### Semana 1 (17/03/25)
+- Apresentação do programa de residência tecnológica.   
 
-- Entendi como funciona a comunicação I2C com displays OLED.
+### Semana 2 (24/03/25)
+- Apresentação dos projetos desenvolvidos na capacitação em sistemas embarcados.   
+
+### Semana 3 (31/03/25)
+- Visão geral do microncontroladores, microprocessadores, FPGA, ASIC e SBC.    
+- Visão geral do github
