@@ -1,13 +1,13 @@
 # Monitoramento de corredores frio em data centers
 ---
 ## :dart: Objetivo do projeto
-- Este trabalho descreve o processo de desenvolvimento de um projeto de sistemas embarcados, apresentando os passos seguidos desde o alinhamento estratégico do projeto com com os direcionados de valor (drivers) de negócio, passando pela concepção, implementação, testes e validação do sistema.     
+Este trabalho descreve o processo de desenvolvimento de um projeto de sistemas embarcados, apresentando os passos seguidos desde o alinhamento estratégico do projeto com com os direcionados de valor (drivers) de negócio, passando pela concepção, implementação, testes e validação do sistema.     
 De forma geral, a metodologia de projeto adotada está em linha com as propostas em [1] envolvendo as seguintes etapas iterativas:     
-    - i) levantamento e elucidação dos requisitos;     
-    - ii) especificação, que envolve a descrição em linguagem clara e a validação dos requisitos pelos interessados;    
-    - iii) arquitetura, descrição funcional do sistema em diagramas de blocos, destacando os principais componentes e módulos do sistema;    
-    - iv) componentes, seleção dos componentes de hardware e software que atendam as especificações; e    
-    - v) integração de sistemas.    
+i) levantamento e elucidação dos requisitos;     
+ii) especificação, que envolve a descrição em linguagem clara e a validação dos requisitos pelos interessados;    
+iii) arquitetura, descrição funcional do sistema em diagramas de blocos, destacando os principais componentes e módulos do sistema;    
+iv) componentes, seleção dos componentes de hardware e software que atendam as especificações; e    
+v) integração de sistemas.    
 Além das etapas citas, a metodologia adotada envolve a abordagem evolucionária, conforme figura abaixo:
 
 [<center><img src="/projetos/tunel_frio/assets/metodologia.png"></center>]()
