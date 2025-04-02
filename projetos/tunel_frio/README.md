@@ -1,4 +1,6 @@
 # Monitoramento de corredores frio em data centers
+[<center><img src="/projetos/tunel_frio/assets/tunelfrio.png"></center>]()
+
 ---
 ## :dart: Objetivo do projeto
 Este trabalho descreve o processo de desenvolvimento de um projeto de sistemas embarcados, apresentando os passos seguidos desde o alinhamento estratégico do projeto com com os direcionados de valor (drivers) de negócio, passando pela concepção, implementação, testes e validação do sistema.     
@@ -34,7 +36,8 @@ Essa abordagem, conforme relatado em [1], é um ciclo de vida dinâmico de desen
 5. A Pico reiniciará automaticamente e começará a executar o código.
 ---
 
-## :bulb: Pinagem dos dispositivos utilizados
+## :bulb: Pinagem dos dispositivos utilizados    
+
 | Componente            | Conexão na BitDogLab      |
 |-----------------------|---------------------------|
 | BitDogLab (RP2040)    | -                         |
@@ -49,11 +52,12 @@ Essa abordagem, conforme relatado em [1], é um ciclo de vida dinâmico de desen
 ---
 ## :chart_with_upwards_trend: Resultados esperados ou obtidos     
 
-
 Conforme resultados obtidos, os próximos passos envolve:    
 i) conseguir um outro sensor DHT22 para verificar se os problemas encontrados estão no sensor ou não; e    
 ii) pesquisar a razão das medidas iniciais do sensor de ultrassom estarem incorretas.    
 Além disto, a ideia é avançar no desenvolvimento, entregando todas as funcionalidades descritas na Tabela 1.
 O projeto em questão, proporcionou uma experiência de aprendizagem impar, onde conseguimos vivenciar todo o ciclo de desenvolvimento de um sistema embarcado incluído sua documentação.
+
+
 ---
 
