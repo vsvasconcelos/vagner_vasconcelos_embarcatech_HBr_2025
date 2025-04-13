@@ -21,6 +21,8 @@ Cada projeto tem sua própria pasta, contendo:
 | Projeto | Descrição |
 |---------|-----------|
 | [Monitoramento de tunel frio](./projetos/tunel_frio/) | Monitoramento de túneis frio em data centers |
+| [Contador Regressico](./projetos/contador/)| Controle do display OLED, comunicação I2C e interrupções|
+| [Joystick](./projetos/joystick/)| Controle do joystick|
 
 ---
 ##   :dart: Diário de Bordo (Reflexões e Aprendizados)    
@@ -35,3 +37,6 @@ Ao longo desta jornada, esta seção será atualizada com os principais aprendiz
 ### Semana 3 (31/03/25)
 - Visão geral do microncontroladores, microprocessadores, FPGA, ASIC e SBC.    
 - Visão geral do github
+
+### Semana 4 (07/03/25)
+- Visita a sede do [Instituto Hardware Brasil - Hbr](https://www.hardware.org.br/) no Parque científico e tecnológico da [Unicamp](https://parque.inova.unicamp.br/) e alguns laboratórios da [FEEC Unicamp](https://www.fee.unicamp.br/).  

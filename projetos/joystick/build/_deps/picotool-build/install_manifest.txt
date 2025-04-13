@@ -1,0 +1,5 @@
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/joystick/build/_deps/picotool/picotool
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/joystick/build/_deps/picotool/picotoolTargets.cmake
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/joystick/build/_deps/picotool/picotoolTargets-release.cmake
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/joystick/build/_deps/picotool/picotoolConfig.cmake
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/joystick/build/_deps/picotool/picotoolConfigVersion.cmake
