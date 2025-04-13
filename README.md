@@ -21,7 +21,7 @@ Cada projeto tem sua própria pasta, contendo:
 | Projeto | Descrição |
 |---------|-----------|
 | [Monitoramento de tunel frio](./projetos/tunel_frio/) | Monitoramento de túneis frio em data centers |
-| [Contador Regressico](./projetos/contador/)| Controle do display OLED, comunicação I2C e interrupções|
+| [Contador Regressivo](./projetos/contador/)| Controle do display OLED, comunicação I2C e interrupções|
 | [Joystick](./projetos/joystick/)| Controle do joystick|
 
 ---
