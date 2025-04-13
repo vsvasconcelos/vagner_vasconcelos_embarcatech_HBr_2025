@@ -22,7 +22,8 @@ Cada projeto tem sua própria pasta, contendo:
 |---------|-----------|
 | [Monitoramento de tunel frio](./projetos/tunel_frio/) | Monitoramento de túneis frio em data centers |
 | [Contador Regressivo](./projetos/contador/)| Controle do display OLED, comunicação I2C e interrupções|
-| [Joystick](./projetos/joystick/)| Controle do joystick|
+| [Joystick](./projetos/joystick/)| Controle do joystick e display OLED|
+| [Temperatura](./projetos/temperatura/)| Medição da temperatura interna do RP2040|
 
 ---
 ##   :dart: Diário de Bordo (Reflexões e Aprendizados)    

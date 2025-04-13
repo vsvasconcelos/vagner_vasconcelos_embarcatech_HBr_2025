@@ -1,6 +1,6 @@
 # Leitura dos valores convertidos digitalmente do joystick da BitDogLab. 
 
-[<center><img src="/projetos/joystick/assets/joystick-esquema.png></center>]()
+[<center><img src="/projetos/joystick/assets/joystick-esquema.png"></center>]()
 
 ---
 ## :dart: Objetivo do projeto
@@ -8,7 +8,7 @@ Leitura dos valores convertidos digitalmente do joystick da BitDogLab.
 Os valores podem ser mostrados no terminal ou então no display OLED. 
 --- 
 
-[<center><img src="/projetos/joystick/assets/joystick_display.png></center>]() 
+[<center><img src="/projetos/joystick/assets/joystick_display.png"></center>]() 
 
 ---
 

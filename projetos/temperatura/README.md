@@ -1,5 +1,6 @@
 # Leitura do sensor de temperatura interno do RP2040.
-[<center><img src="projetos/temperatura/assets/temperatura.png"></center>]
+[<center><img src="/projetos/temperatura/assets/temperatura.png"></center>]()
+
 
 ---
 ## :dart: Objetivo do projeto
