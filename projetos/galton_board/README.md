@@ -8,8 +8,7 @@ O *Galton Board* é um experimento fascinante que ilustra conceitos fundamentais
   <source src="https://i.imgur.com/DlXmBjO.mp4" type="video/mp4">
 </video>
 O Galton Board consiste em uma série de pinos dispostos geometricamente. Esferas são liberadas de um ponto central superior e, à medida que caem, colidem com os pinos e se desviam  aleatoriamente para a esquerda ou para a direita. Esse processo continua até que as esferas alcancem a base do tabuleiro, onde se acumulam em compartimentos distintos.  
-[<center><img src="/projetos/galton_board/assets/gb.png"></center>](https://zerodha.com/varsity/chapter/volatility-normal-distribution/)   
-
+[<center><img src="/projetos/galton_board/assets/gb.png"></center>](https://zerodha.com/varsity/chapter/volatility-normal-distribution/)     
 O objetivo deste projeto é simular uma *Galton Board* no display OLED da [BitDogLab](https://www.fee.unicamp.br/bitdoglab-a-revolucao-no-ensino-de-eletronica-programacao-e-iot/), usando uma  abordagem de [Digital Twin](https://www.youtube.com/watch?v=2hnoGo27uf8). Isso significa construir um modelo computacional que se comporte de maneira semelhante ao dispositivo físico, permitindo observar a distribuição das "bolas" ao final do tabuleiro — e compará-la com a teoria da distribuição normal.
 
 ---
@@ -21,23 +20,23 @@ O objetivo deste projeto é simular uma *Galton Board* no display OLED da [BitDo
 ---
 
 ## :floppy_disk: Como compilar e executar o código   
-Configure seu sistema conforme apresentado em [Lindevs] (https://lindevs.com/set-up-raspberry-pi-pico-sdk-on-ubuntu).  
+Configure seu sistema conforme apresentado em [Lindevs](https://lindevs.com/set-up-raspberry-pi-pico-sdk-on-ubuntu).  
 
 ### Estrutura do projeto:
 '''
 ├── galton_board
-        ├── assets
-        ├── buid
-        ├── docs
-        ├── inc
-        │   ├── font.h
-        │   ├── ssd1306.c
-        │   ├── ssd1306.h
-        │   └── ws2818b.pio.h
-        ├── README.md
-        └── src
-            ├── galton_board.c
-            ├── CMakeLists.txt 
+        ├── assets    
+        ├── buid   
+        ├── docs   
+        ├── inc   
+        │   ├── font.h   
+        │   ├── ssd1306.c   
+        │   ├── ssd1306.h   
+        │   └── ws2818b.pio.h   
+        ├── README.md   
+        └── src   
+            ├── galton_board.c   
+            ├── CMakeLists.txt    
 '''
 Dentro da pasta *buid*, na estrutura do projeto, digite os comandos:   
 > cmake ..   
