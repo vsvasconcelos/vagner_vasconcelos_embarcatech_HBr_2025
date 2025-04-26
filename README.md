@@ -24,6 +24,9 @@ Cada projeto tem sua própria pasta, contendo:
 | [Contador Regressivo](./projetos/contador/)| Controle do display OLED, comunicação I2C e interrupções|
 | [Joystick](./projetos/joystick/)| Controle do joystick e display OLED|
 | [Temperatura](./projetos/temperatura/)| Medição da temperatura interna do RP2040|
+| [galton board](./projetos/galton_board/)| Tabuleiro de Galton na BitDogLab|
+
+
 
 ---
 ##   :dart: Diário de Bordo (Reflexões e Aprendizados)    

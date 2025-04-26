@@ -3,15 +3,20 @@
 
 ---
 ## :dart: Objetivo do projeto
-O *Galton Board* é um experimento fascinante que ilustra conceitos fundamentais de física e matemática de maneira visual e intuitiva. Inventado por Sir Francis Galton, este dispositivo demonstra como distribuições estatísticas emergem a partir de movimentos aleatórios, resultando em padrões previsíveis.  
-<video width="320" height="240" controls>
-  <source src="https://i.imgur.com/DlXmBjO.mp4" type="video/mp4">
-</video>
-O Galton Board consiste em uma série de pinos dispostos geometricamente. Esferas são liberadas de um ponto central superior e, à medida que caem, colidem com os pinos e se desviam  aleatoriamente para a esquerda ou para a direita. Esse processo continua até que as esferas alcancem a base do tabuleiro, onde se acumulam em compartimentos distintos.  
-[<center><img src="/projetos/galton_board/assets/gb.png"></center>](https://zerodha.com/varsity/chapter/volatility-normal-distribution/)     
-O objetivo deste projeto é simular uma *Galton Board* no display OLED da [BitDogLab](https://www.fee.unicamp.br/bitdoglab-a-revolucao-no-ensino-de-eletronica-programacao-e-iot/), usando uma  abordagem de [Digital Twin](https://www.youtube.com/watch?v=2hnoGo27uf8). Isso significa construir um modelo computacional que se comporte de maneira semelhante ao dispositivo físico, permitindo observar a distribuição das "bolas" ao final do tabuleiro — e compará-la com a teoria da distribuição normal.
+O *Galton Board* é um experimento fascinante que ilustra conceitos fundamentais de física e matemática de maneira visual e intuitiva. Inventado por Sir Francis Galton, este dispositivo demonstra como distribuições estatísticas emergem a partir de movimentos aleatórios, resultando em padrões previsíveis.    
+
+<iframe src="https://i.imgur.com/DlXmBjO.mp4" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>  
+
+O Galton Board consiste em uma série de pinos dispostos geometricamente. Esferas são liberadas de um ponto central superior e, à medida que caem, colidem com os pinos e se desviam  aleatoriamente para a esquerda ou para a direita. Esse processo continua até que as esferas alcancem a base do tabuleiro, onde se acumulam em compartimentos distintos.    
+
+
+O objetivo deste projeto é simular uma *Galton Board* no display OLED da [BitDogLab](https://www.fee.unicamp.br/bitdoglab-a-revolucao-no-ensino-de-eletronica-programacao-e-iot/), usando uma  abordagem de [Digital Twin](https://www.youtube.com/watch?v=2hnoGo27uf8). Isso significa construir um modelo computacional que se comporte de maneira semelhante ao dispositivo físico, permitindo observar a distribuição das "bolas" ao final do tabuleiro — e compará-la com a teoria da distribuição normal.   
+
+Para simular um desbalanceamento, foi utilizado o joystick.
 
 ---
+## Link Wokwi
+[link](https://wokwi.com/projects/429066412315243521)   
 
 ## :wrench: Componentes usados 
 | Componente            | Quantidade    |
@@ -23,7 +28,8 @@ O objetivo deste projeto é simular uma *Galton Board* no display OLED da [BitDo
 Configure seu sistema conforme apresentado em [Lindevs](https://lindevs.com/set-up-raspberry-pi-pico-sdk-on-ubuntu).  
 
 ### Estrutura do projeto:
-'''
+´´'   
+
 ├── galton_board
         ├── assets    
         ├── buid   
@@ -37,7 +43,8 @@ Configure seu sistema conforme apresentado em [Lindevs](https://lindevs.com/set-
         └── src   
             ├── galton_board.c   
             ├── CMakeLists.txt    
-'''
+´´'  
+
 Dentro da pasta *buid*, na estrutura do projeto, digite os comandos:   
 > cmake ..   
 > make -j$(nproc)    
@@ -56,8 +63,12 @@ A Pico reiniciará automaticamente e começará a executar o código.
 ---
 
 
-## :movie_camera: Imagens e/ou vídeos do projeto em funcionamento (se possível)
-[<center><img src="/projetos/galton_board/assets/imagem.png"></center>]()
+## :movie_camera: Imagens e/ou vídeos do projeto em funcionamento
+### Curva normal
+[<center><img src="/projetos/galton_board/assets/normal.png"></center>]()
+
+### Desbalanceamento (com joystick)
+[<center><img src="/projetos/galton_board/assets/desbalanceamento_2.png"></center>]()
 
 ---
 ## :chart_with_upwards_trend: Resultados esperados ou obtidos     

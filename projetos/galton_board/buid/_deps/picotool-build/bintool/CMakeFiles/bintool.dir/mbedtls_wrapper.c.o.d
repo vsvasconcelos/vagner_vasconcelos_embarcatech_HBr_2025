@@ -50,8 +50,7 @@ bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h /usr/include/assert.h \
  /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/sha256.h \
- /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/config.h \
- /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/check_config.h \
+ /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/_deps/picotool-src/lib/include/picotool_mbedtls_config.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -88,7 +87,6 @@ bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: \
  /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/entropy.h \
  /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/sha512.h \
  /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/pk.h \
- /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/rsa.h \
  /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/version.h \
  /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \

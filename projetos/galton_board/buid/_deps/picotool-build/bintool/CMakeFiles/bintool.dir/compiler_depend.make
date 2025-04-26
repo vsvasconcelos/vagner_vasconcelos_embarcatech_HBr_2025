@@ -4,8 +4,6 @@
 bintool/CMakeFiles/bintool.dir/bintool.cpp.o: /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/_deps/picotool-src/bintool/bintool.cpp \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/aes.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/bignum.h \
-  /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/check_config.h \
-  /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/config.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/ctr_drbg.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/ecdsa.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/ecp.h \
@@ -15,7 +13,6 @@ bintool/CMakeFiles/bintool.dir/bintool.cpp.o: /home/vagner/pico/vagner_vasconcel
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/pk.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/platform_time.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/platform_util.h \
-  /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/rsa.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/sha256.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/sha512.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/version.h \
@@ -27,6 +24,7 @@ bintool/CMakeFiles/bintool.dir/bintool.cpp.o: /home/vagner/pico/vagner_vasconcel
   /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/_deps/picotool-src/elf/elf.h \
   /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/_deps/picotool-src/elf/elf_file.h \
   /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/_deps/picotool-src/errors/errors.h \
+  /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/_deps/picotool-src/lib/include/picotool_mbedtls_config.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -305,8 +303,6 @@ bintool/CMakeFiles/bintool.dir/bintool.cpp.o: /home/vagner/pico/vagner_vasconcel
 bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/_deps/picotool-src/bintool/mbedtls_wrapper.c \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/aes.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/bignum.h \
-  /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/check_config.h \
-  /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/config.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/ctr_drbg.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/ecdsa.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/ecp.h \
@@ -315,11 +311,11 @@ bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: /home/vagner/pico/vagner_vas
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/pk.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/platform_time.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/platform_util.h \
-  /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/rsa.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/sha256.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/sha512.h \
   /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/version.h \
   /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/_deps/picotool-src/bintool/mbedtls_wrapper.h \
+  /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/_deps/picotool-src/lib/include/picotool_mbedtls_config.h \
   /usr/include/alloca.h \
   /usr/include/assert.h \
   /usr/include/endian.h \
@@ -472,7 +468,9 @@ bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: /home/vagner/pico/vagner_vas
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+/usr/include/c++/14/cwchar:
+
+/usr/include/c++/14/stdexcept:
 
 /usr/include/c++/14/cstdlib:
 
@@ -542,9 +540,13 @@ bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: /home/vagner/pico/vagner_vas
 
 /usr/include/c++/14/bits/std_function.h:
 
+/usr/include/c++/14/bits/std_abs.h:
+
 /usr/include/c++/14/bits/shared_ptr_atomic.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/include/c++/14/bits/requires_hosted.h:
 
@@ -570,6 +572,10 @@ bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: /home/vagner/pico/vagner_vas
 
 /usr/include/c++/14/bits/basic_string.tcc:
 
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/c++/14/ostream:
+
 /usr/include/c++/14/bits/nested_exception.h:
 
 /usr/include/c++/14/bits/memoryfwd.h:
@@ -578,13 +584,23 @@ bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: /home/vagner/pico/vagner_vas
 
 /usr/include/c++/14/ios:
 
-/usr/include/c++/14/bits/invoke.h:
+/usr/include/c++/14/algorithm:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+/usr/include/c++/14/istream:
 
-/usr/include/c++/14/bits/hash_bytes.h:
+/usr/include/c++/14/bits/uses_allocator.h:
 
-/usr/include/c++/14/bits/char_traits.h:
+/usr/include/c++/14/bits/localefwd.h:
+
+/home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/ctr_drbg.h:
+
+/usr/include/c++/14/streambuf:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
+
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/c++/14/cstdint:
 
@@ -604,6 +620,14 @@ bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: /home/vagner/pico/vagner_vas
 
 /usr/include/c++/14/bit:
 
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/_deps/picotool-src/lib/include/picotool_mbedtls_config.h:
+
+/usr/include/c++/14/bits/atomic_base.h:
+
+/usr/include/stdlib.h:
+
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/_deps/picotool-src/bintool/mbedtls_wrapper.h:
+
 /usr/include/c++/14/string:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h:
@@ -620,28 +644,6 @@ bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: /home/vagner/pico/vagner_vas
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/c++/14/bits/cxxabi_forced.h:
-
-/usr/include/c++/14/bits/ios_base.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/c++/14/bits/std_abs.h:
-
-/usr/include/c++/14/ostream:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/rsa.h:
-
-/home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/platform_util.h:
-
 /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/_deps/picotool-src/errors/errors.h:
 
 /usr/include/c++/14/fstream:
@@ -649,10 +651,6 @@ bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: /home/vagner/pico/vagner_vas
 /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/_deps/picotool-src/bintool/metadata.h:
 
 /usr/include/c++/14/concepts:
-
-/home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/sha512.h:
-
-/usr/include/c++/14/bits/exception.h:
 
 /usr/include/c++/14/cctype:
 
@@ -664,11 +662,33 @@ bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: /home/vagner/pico/vagner_vas
 
 /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/version.h:
 
+/usr/include/c++/14/bits/charconv.h:
+
+/usr/include/c++/14/bits/basic_ios.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/c++/14/stdlib.h:
+
 /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/aes.h:
 
 /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/bignum.h:
 
-/home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/check_config.h:
+/usr/include/c++/14/bits/range_access.h:
+
+/usr/include/c++/14/bits/stl_pair.h:
+
+/usr/include/c++/14/bits/ostream_insert.h:
+
+/usr/include/strings.h:
+
+/usr/include/c++/14/random:
+
+/usr/include/c++/14/bits/char_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/c++/14/bits/hash_bytes.h:
 
 /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/entropy.h:
 
@@ -677,6 +697,8 @@ bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: /home/vagner/pico/vagner_vas
 /usr/include/c++/14/cstdio:
 
 /usr/include/c++/14/bits/utility.h:
+
+/home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/platform_util.h:
 
 /usr/include/c++/14/bits/move.h:
 
@@ -696,61 +718,45 @@ bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: /home/vagner/pico/vagner_vas
 
 /usr/include/c++/14/bits/codecvt.h:
 
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/c++/14/bits/range_access.h:
-
-/usr/include/c++/14/bits/stl_pair.h:
-
-/usr/include/c++/14/bits/ostream_insert.h:
-
-/usr/include/strings.h:
-
-/usr/include/c++/14/random:
-
-/usr/include/c++/14/bits/uses_allocator.h:
-
-/usr/include/c++/14/bits/localefwd.h:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
-
-/home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/ctr_drbg.h:
-
-/usr/include/c++/14/streambuf:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
-
-/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/include/c++/14/algorithm:
-
-/usr/include/c++/14/istream:
-
-/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/_deps/picotool-src/bintool/mbedtls_wrapper.h:
-
-/usr/include/stdlib.h:
-
 /usr/include/c++/14/bits/ptr_traits.h:
 
 /usr/include/alloca.h:
 
 /usr/include/inttypes.h:
 
+/usr/include/c++/14/bits/exception.h:
+
+/home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/sha512.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/c++/14/bits/cxxabi_forced.h:
+
+/usr/include/c++/14/bits/atomic_lockfree_defines.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/endian.h:
+
+/usr/include/stdint.h:
+
+/usr/include/c++/14/bits/ios_base.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
 /usr/include/c++/14/bits/shared_ptr.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
 /usr/include/c++/14/bits/uniform_int_dist.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/c++/14/backward/binders.h:
-
-/home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/config.h:
 
 /usr/include/c++/14/bits/alloc_traits.h:
 
@@ -770,16 +776,6 @@ bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: /home/vagner/pico/vagner_vas
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/usr/include/c++/14/bits/atomic_base.h:
-
-/usr/include/c++/14/stdlib.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/c++/14/bits/atomic_lockfree_defines.h:
-
 /usr/include/c++/14/bits/stl_raw_storage_iter.h:
 
 /usr/include/c++/14/bits/basic_ios.h:
@@ -794,13 +790,7 @@ bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: /home/vagner/pico/vagner_vas
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
-/usr/include/c++/14/bits/basic_ios.tcc:
-
-/usr/include/c++/14/bits/charconv.h:
-
-/usr/include/c++/14/cwchar:
-
-/usr/include/c++/14/stdexcept:
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/c++/14/bits/cxxabi_init_exception.h:
 
@@ -819,6 +809,8 @@ bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: /home/vagner/pico/vagner_vas
 /usr/include/c++/14/bits/functexcept.h:
 
 /usr/include/pthread.h:
+
+/usr/include/c++/14/bits/invoke.h:
 
 /usr/include/c++/14/cwctype:
 
@@ -864,9 +856,9 @@ bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.o: /home/vagner/pico/vagner_vas
 
 /usr/include/c++/14/bits/stl_function.h:
 
-/usr/include/c++/14/bits/random.tcc:
-
 /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/_deps/picotool-src/bintool/bintool.cpp:
+
+/usr/include/c++/14/bits/random.tcc:
 
 /usr/include/c++/14/memory:
 

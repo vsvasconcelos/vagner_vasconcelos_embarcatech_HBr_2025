@@ -79,4 +79,7 @@ CMakeFiles/galton_board.dir/galton_board.c.o: \
  /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/inc/font.h \
  /home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h \
  /home/vagner/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h \
- /home/vagner/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h
+ /home/vagner/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h \
+ /home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/include/hardware/watchdog.h \
+ /home/vagner/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h \
+ /home/vagner/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/watchdog.h
