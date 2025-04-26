@@ -28,10 +28,10 @@ Para simular um desbalanceamento, foi utilizado o joystick.
 Configure seu sistema conforme apresentado em [Lindevs](https://lindevs.com/set-up-raspberry-pi-pico-sdk-on-ubuntu).  
 
 ### Estrutura do projeto:
-´´'   
+´´´ 
 
-├── galton_board
-        ├── assets    
+├── galton_board     
+        ├── assets       
         ├── buid   
         ├── docs   
         ├── inc   
@@ -42,8 +42,9 @@ Configure seu sistema conforme apresentado em [Lindevs](https://lindevs.com/set-
         ├── README.md   
         └── src   
             ├── galton_board.c   
-            ├── CMakeLists.txt    
-´´'  
+            ├── CMakeLists.txt     
+
+´´´
 
 Dentro da pasta *buid*, na estrutura do projeto, digite os comandos:   
 > cmake ..   
