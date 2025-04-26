@@ -5,7 +5,7 @@
 ## :dart: Objetivo do projeto
 O *Galton Board* é um experimento fascinante que ilustra conceitos fundamentais de física e matemática de maneira visual e intuitiva. Inventado por Sir Francis Galton, este dispositivo demonstra como distribuições estatísticas emergem a partir de movimentos aleatórios, resultando em padrões previsíveis.    
 
-<iframe src="https://i.imgur.com/DlXmBjO.mp4" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>  
+[vídeo](https://i.imgur.com/DlXmBjO.mp4)
 
 O Galton Board consiste em uma série de pinos dispostos geometricamente. Esferas são liberadas de um ponto central superior e, à medida que caem, colidem com os pinos e se desviam  aleatoriamente para a esquerda ou para a direita. Esse processo continua até que as esferas alcancem a base do tabuleiro, onde se acumulam em compartimentos distintos.    
 
@@ -68,7 +68,7 @@ A Pico reiniciará automaticamente e começará a executar o código.
 [<center><img src="/projetos/galton_board/assets/normal.png"></center>]()
 
 ### Desbalanceamento (com joystick)
-[<center><img src="/projetos/galton_board/assets/desbalanceamento_2.png"></center>]()
+[<center><img src="/projetos/galton_board/assets/desbalanceado_2.png"></center>]()
 
 ---
 ## :chart_with_upwards_trend: Resultados esperados ou obtidos     
