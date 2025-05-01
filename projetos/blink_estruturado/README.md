@@ -1,4 +1,4 @@
-#Explicação da Arquitetura:
+# Explicação da Arquitetura:
 
 ## Camada de Aplicação (app/main.c):
 
@@ -29,3 +29,9 @@
     Seja fácil substituir o driver sem afetar o resto do sistema
 
     Cada camada tenha uma responsabilidade bem definida
+    
+# Referências
+
+- [Arquitetura de Software em Sistemas Embarcados - Rossi, H. ](https://embarcados.com.br/arquitetura-de-software-em-sistemas-embarcados/)  
+- [Arquitetura de software em camadas para iniciantes - Bertoleti, P.](https://embarcados.com.br/arquitetura-de-software-em-camadas/)
+- [Arquitetura de Software em Sistemas Embarcados - Ofuchi, C.](http://paginapessoal.utfpr.edu.br/ofuchi/sistemas-embarcados-el68e/aula-5-arquitetura/5_arquitetura_CO.pdf/view)
