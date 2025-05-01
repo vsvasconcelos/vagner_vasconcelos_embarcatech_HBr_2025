@@ -1,3 +1,0 @@
-/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/temperatura/build/_deps/picotool-subbuild/CMakeFiles/picotool-populate.dir
-/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/temperatura/build/_deps/picotool-subbuild/CMakeFiles/edit_cache.dir
-/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/temperatura/build/_deps/picotool-subbuild/CMakeFiles/rebuild_cache.dir
