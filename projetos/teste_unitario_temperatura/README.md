@@ -2,7 +2,14 @@
 
 ## Objetivo
 
-    Utilizar o framework [Unity](https://www.throwtheswitch.org/unity) para testar a função de conversão da leitura do conversor analógico digital (ADC de 12 bits) interno da Raspberry Pi Pico W na medição da temperatura por meio do sensor embutido no sistema.
+Utilizar o framework [Unity](https://www.throwtheswitch.org/unity) para testar a função de conversão da leitura do conversor analógico digital (ADC de 12 bits) interno da Raspberry Pi Pico W na medição da temperatura por meio do sensor embutido no sistema.
+
+### Fórmula:
+
+[<center><img src="/projetos/teste_unitario_temperatura/assets/formula.png"></center>]()   
+
+### Resultado do teste:
+[<center><img src="/projetos/teste_unitario_temperatura/assets/resultado.png"></center>]()   
     
 # Referências
 
