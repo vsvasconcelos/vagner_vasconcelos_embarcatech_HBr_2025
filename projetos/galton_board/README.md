@@ -1,5 +1,5 @@
 # Galton Board Digital com BitDogLab
-[<center><img src="/projetos/galton_board/assets/gb.png"></center>](https://zerodha.com/varsity/chapter/volatility-normal-distribution/)   
+[<center><img src="/projetos/galton_board/assets/gb.png", width=700></center>](https://zerodha.com/varsity/chapter/volatility-normal-distribution/)   
 
 ---
 ## :dart: Objetivo do projeto
@@ -12,7 +12,8 @@ O objetivo deste projeto é simular uma *Galton Board* no display OLED da [BitDo
 
 ---
 ## Link Wokwi
-[<center><img src="/projetos/galton_board/assets/normal.png"></center>](https://wokwi.com/projects/430160171556376577)   
+[<center><img src="projetos/galton_board/assets/normal.png", width=700></center>](https://wokwi.com/projects/430160171556376577)      
+
 
 ## :wrench: Componentes usados 
 | Componente            | Quantidade    |
