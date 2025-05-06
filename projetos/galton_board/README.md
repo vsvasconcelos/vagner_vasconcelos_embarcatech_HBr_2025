@@ -17,7 +17,7 @@
 
 ---
 ## Link Wokwi
-[link](https://wokwi.com/projects/429066412315243521)   
+[![Galton Board Wokwi]("/projetos/galton_board/assets/normal.png")](https://wokwi.com/projects/430160171556376577 "Galton Board Wokwi") 
 
 ## :wrench: Componentes usados 
 | Componente            | Quantidade    |
@@ -62,11 +62,12 @@
 
 
 ## :movie_camera: Imagens e/ou vídeos do projeto em funcionamento
-### Curva normal
-[<center><img src="/projetos/galton_board/assets/normal.png"></center>]()
 
-### Desbalanceamento (com joystick)
-[<center><img src="/projetos/galton_board/assets/desbalanceado_2.png"></center>]()
+### Demonstração
+
+<video width="320" height="240" controls>
+  <source src="/projetos/galton_board/assets/GaltonBoard.mp4" type="video/mp4">
+</video>
 
 ---
 ## :chart_with_upwards_trend: Resultados esperados ou obtidos     
