@@ -12,7 +12,7 @@ O objetivo deste projeto é simular uma *Galton Board* no display OLED da [BitDo
 
 ---
 ## Link Wokwi
-[![Galton Board Wokwi]("/projetos/galton_board/assets/normal.png")](https://wokwi.com/projects/430160171556376577 "Galton Board Wokwi") 
+[<center><img src="/projetos/galton_board/assets/normal.png"></center>]((https://wokwi.com/projects/430160171556376577)   
 
 ## :wrench: Componentes usados 
 | Componente            | Quantidade    |
@@ -25,26 +25,26 @@ Configure seu sistema conforme apresentado em [Lindevs](https://lindevs.com/set-
 
 ### Estrutura do projeto:    
 ├── galton_board     
-    ├── CMakeLists.txt  
-    ├── assets       
-    ├── buid   
-    ├── docs   
-    ├── inc   
-    │   ├── font.h   
-    │   ├── ssd1306.c   
-    │   ├── ssd1306.h   
-    │   └── ws2818b.pio.h   
-    ├── README.md   
-    └── src   
-        ├── galton_board.c   
+        ├── CMakeLists.txt  
+        ├── assets       
+        ├── buid   
+        ├── docs   
+        ├── inc   
+        │   ├── font.h   
+        │   ├── ssd1306.c   
+        │   ├── ssd1306.h   
+        │   └── ws2818b.pio.h   
+        ├── README.md   
+        └── src   
+            ├── galton_board.c   
 
 Dentro da pasta *buid*, na estrutura do projeto, digite os comandos:   
 > cmake ..   
 > make -j$(nproc)    
 
-Conecte a BitDogLab (Raspberry Pi Pico) via cabo USB e coloque a Pico no modo de boot (pressione o botão BOOTSEL e conecte o cabo);   
-Copie o arquivo galton_board.uf2 para a BitDogLab.   
-A Pico reiniciará automaticamente e começará a executar o código.   
+- Conecte a BitDogLab (Raspberry Pi Pico) via cabo USB e coloque a Pico no modo de boot (pressione o botão BOOTSEL e conecte o cabo);   
+- Copie o arquivo galton_board.uf2 para a BitDogLab.   
+- A Pico reiniciará automaticamente e começará a executar o código.   
 ---
 
 ## :bulb: Pinagem dos dispositivos utilizados    
