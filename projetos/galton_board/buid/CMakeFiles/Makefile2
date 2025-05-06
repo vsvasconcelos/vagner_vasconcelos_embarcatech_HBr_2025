@@ -73,8 +73,6 @@ preinstall: pico-sdk/preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/galton_board.dir/clean
-clean: CMakeFiles/picotoolForceReconfigure.dir/clean
-clean: CMakeFiles/picotoolBuild.dir/clean
 clean: pico-sdk/clean
 .PHONY : clean
 
@@ -1779,11 +1777,10 @@ pico-sdk/tools/clean:
 # Target rules for target CMakeFiles/galton_board.dir
 
 # All Build rule for target.
-CMakeFiles/galton_board.dir/all: CMakeFiles/picotoolBuild.dir/all
 CMakeFiles/galton_board.dir/all: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/galton_board.dir/build.make CMakeFiles/galton_board.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/galton_board.dir/build.make CMakeFiles/galton_board.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84 "Built target galton_board"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92 "Built target galton_board"
 .PHONY : CMakeFiles/galton_board.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1801,58 +1798,6 @@ galton_board: CMakeFiles/galton_board.dir/rule
 CMakeFiles/galton_board.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/galton_board.dir/build.make CMakeFiles/galton_board.dir/clean
 .PHONY : CMakeFiles/galton_board.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/picotoolForceReconfigure.dir
-
-# All Build rule for target.
-CMakeFiles/picotoolForceReconfigure.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picotoolForceReconfigure.dir/build.make CMakeFiles/picotoolForceReconfigure.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picotoolForceReconfigure.dir/build.make CMakeFiles/picotoolForceReconfigure.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/CMakeFiles --progress-num= "Built target picotoolForceReconfigure"
-.PHONY : CMakeFiles/picotoolForceReconfigure.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/picotoolForceReconfigure.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/picotoolForceReconfigure.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/CMakeFiles 0
-.PHONY : CMakeFiles/picotoolForceReconfigure.dir/rule
-
-# Convenience name for target.
-picotoolForceReconfigure: CMakeFiles/picotoolForceReconfigure.dir/rule
-.PHONY : picotoolForceReconfigure
-
-# clean rule for target.
-CMakeFiles/picotoolForceReconfigure.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picotoolForceReconfigure.dir/build.make CMakeFiles/picotoolForceReconfigure.dir/clean
-.PHONY : CMakeFiles/picotoolForceReconfigure.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/picotoolBuild.dir
-
-# All Build rule for target.
-CMakeFiles/picotoolBuild.dir/all: CMakeFiles/picotoolForceReconfigure.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picotoolBuild.dir/build.make CMakeFiles/picotoolBuild.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picotoolBuild.dir/build.make CMakeFiles/picotoolBuild.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/CMakeFiles --progress-num=85,86,87,88,89,90,91,92 "Built target picotoolBuild"
-.PHONY : CMakeFiles/picotoolBuild.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/picotoolBuild.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/picotoolBuild.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/CMakeFiles 0
-.PHONY : CMakeFiles/picotoolBuild.dir/rule
-
-# Convenience name for target.
-picotoolBuild: CMakeFiles/picotoolBuild.dir/rule
-.PHONY : picotoolBuild
-
-# clean rule for target.
-CMakeFiles/picotoolBuild.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picotoolBuild.dir/build.make CMakeFiles/picotoolBuild.dir/clean
-.PHONY : CMakeFiles/picotoolBuild.dir/clean
 
 #=============================================================================
 # Target rules for target pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir

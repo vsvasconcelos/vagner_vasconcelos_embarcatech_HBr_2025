@@ -1,6 +1,4 @@
 /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/CMakeFiles/galton_board.dir
-/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/CMakeFiles/picotoolForceReconfigure.dir
-/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/CMakeFiles/picotoolBuild.dir
 /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/CMakeFiles/edit_cache.dir
 /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/CMakeFiles/rebuild_cache.dir
 /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/galton_board/buid/pico-sdk/CMakeFiles/edit_cache.dir

@@ -14,7 +14,7 @@
 #include "hardware/gpio.h"
 #include "hardware/watchdog.h"
 
-
+// Configuração do hardware I2C
 #define I2C_PORT i2c1
 #define I2C_SDA 14
 #define I2C_SCL 15
@@ -23,9 +23,6 @@
 
 const int BTN_PIN_A = 5; 
 volatile int botaoA_flag = 0;
-// Termina simulação e apresenta resultado
-// const int BTN_PIN_B = 6; 
-// volatile int botaoB_flag = 0;
 
 bool cor = true;
 
@@ -38,6 +35,7 @@ int direction, row, col;
 
 void full_reset();
 
+// Inicializa o pino do botão A como entrada com pull-up
 void inicializa_IO(void){
   //Inicializa e configura Botao A
   gpio_init(BTN_PIN_A);
@@ -46,11 +44,12 @@ void inicializa_IO(void){
   gpio_pull_up(BTN_PIN_A);
 }
 
-//funcao de callback Handler dos botões
+// Função de callback chamada quando o botão A é pressionado
 void btn_callback(uint gpio, uint32_t events) {
      botaoA_flag = 1;
 }
 
+// Função para resetar completamente o microcontrolador usando o watchdog
 void full_reset() {
     watchdog_enable(1, 1);  // Tempo mínimo de 1ms e reinicia o chip
     while(1);  // Aguarda o watchdog resetar
@@ -66,8 +65,9 @@ int main() {
                                      GPIO_IRQ_EDGE_FALL,
                                      true,
                                      &btn_callback);
+    // Inicializa ADC (para o joystick)
     adc_init();
-    // I2C Initialisation. Using it at 400Khz.
+    // Configura o hardware I2C a 400kHz com pull-ups
     i2c_init(I2C_PORT, 400 * 1000);
 
     gpio_set_function(I2C_SDA, GPIO_FUNC_I2C); // Set the GPIO pin function to I2C
@@ -109,7 +109,7 @@ int main() {
         itoa(texto, aux_Str, 10);
         ssd1306_draw_string(&ssd, aux_Str, coluna, linha);
         sleep_ms(delay);
-        //ssd1306_send_data(&ssd);
+        ssd1306_send_data(&ssd);
     }
 
     void imprime_histograma(int counter, int left){
@@ -122,8 +122,6 @@ int main() {
     ssd1306_fill(&ssd, false);
     //ssd1306_send_data(&ssd);
 
-    
-
     while (true) {
         cor = !cor;
         ssd1306_fill(&ssd, !cor); // Limpa o display
@@ -132,10 +130,9 @@ int main() {
         ssd1306_draw_string(&ssd, "APERTE A PARA", 17, 20);
         ssd1306_draw_string(&ssd, "  INICIAR", 17, 35);
         ssd1306_send_data(&ssd); // Atualiza o display
-    //sleep_ms(500);
+    
         if (botaoA_flag == 1){
             //Limpa o display
-            printf("%d\n", botaoA_flag);
             ssd1306_fill(&ssd, false);
             ssd1306_send_data(&ssd);
             // Inicialização dos contadores com 0
@@ -145,19 +142,26 @@ int main() {
 
             // Para todas as Bolas se o Botao B não for pressionado
             for(int w = 1; w <= Bolas ; w++){
+
                 myData[colunas][linhas];
                 memset(myData, 0, sizeof(myData));
                 row = 0, col = 0;
 
+                // Imprime nº da bolinha no topo
+                imprime_lcd(w,60,0,10);
+
                 for(int x = 1; x <= colunas; x++){
                     // Bola no topo
                     myData[row][col] = 1;
+
                     // Gera um número aleatório entre 0 e 1
                     double random_num = (double)rand() / RAND_MAX;
-                    // Lê posição X do joystick
+
+                    // Lê posição X do joystick para desbalanceamento
                     adc_select_input(1);
                     posicao_joystick = adc_read();
-                    printf("joy: %d\n", posicao_joystick);
+                    printf("joystick: %d\n", posicao_joystick);
+
                     // Joystick centralizado (parado)
                     if ((posicao_joystick > 2000) && (posicao_joystick < 2200)){
                         // Bola para direita
@@ -165,45 +169,45 @@ int main() {
                             col++;
                         }
                     // Joystick não centralizado, posicionado á direita
-                    } else if ((posicao_joystick <= 2000)||(posicao_joystick >= 2200)){
-                        col++;
+                    } else if (posicao_joystick >= 2200){
+                        if (col <= colunas){
+                            col++;
+                        }
                     }
+                    
+                    //
+                    imprime_lcd(myData[1][0],50,10,0);
+                    imprime_lcd(myData[1][1],70,10,0);
+                    imprime_lcd(myData[2][0],40,20,0);
+                    imprime_lcd(myData[2][1],60,20,0);
+                    imprime_lcd(myData[2][2],80,20,0);
+                    imprime_lcd(myData[3][0],30,30,0);
+                    imprime_lcd(myData[3][1],50,30,0);
+                    imprime_lcd(myData[3][2],70,30,0);
+                    imprime_lcd(myData[3][3],90,30,0);
+                    imprime_lcd(myData[4][0],20,40,0);
+                    imprime_lcd(myData[4][1],40,40,0);
+                    imprime_lcd(myData[4][2],60,40,0);
+                    imprime_lcd(myData[4][3],80,40,0);
+                    imprime_lcd(myData[4][4],100,40,0);
+                    //ssd1306_send_data(&ssd);
                     row++;
+
                     if(row == (colunas-1)) {
                         counter[col]++;
                     }
-
-                    // Imprimir no LCD
-                    
-                    imprime_lcd(w,60,0,10);
-                    imprime_lcd(myData[1][0],50,10,10);
-                    imprime_lcd(myData[1][1],70,10,10);
-                    imprime_lcd(myData[2][0],40,20,10);
-                    imprime_lcd(myData[2][1],60,20,10);
-                    imprime_lcd(myData[2][2],80,20,10);
-                    imprime_lcd(myData[3][0],30,30,10);
-                    imprime_lcd(myData[3][1],50,30,10);
-                    imprime_lcd(myData[3][2],70,30,10);
-                    imprime_lcd(myData[3][3],90,30,10);
-                    imprime_lcd(myData[4][0],20,40,10);
-                    imprime_lcd(myData[4][1],40,40,10);
-                    imprime_lcd(myData[4][2],60,40,10);
-                    imprime_lcd(myData[4][3],80,40,10);
-                    imprime_lcd(myData[4][4],100,40,10);
-                    ssd1306_send_data(&ssd);
-                    imprime_lcd(counter[0],20,55,40);
-                    imprime_lcd(counter[1],40,55,40);
-                    imprime_lcd(counter[2],60,55,40);
-                    imprime_lcd(counter[3],80,55,40);
-                    imprime_lcd(counter[4],100,55,40);
-                    ssd1306_send_data(&ssd);
-                    // top, left, width, leight
-                    ssd1306_rect(&ssd, 50, 15, 100, 1, cor, !cor); // Desenha um retângulo
-                    ssd1306_send_data(&ssd);
-                    //sleep_ms(500);
                 }
+                // top, left, width, leight
+                ssd1306_rect(&ssd, 50, 15, 100, 1, cor, !cor); // Desenha um retângulo
+                ssd1306_send_data(&ssd);
+                //sleep_ms(500);
+                imprime_lcd(counter[0],20,55,40);
+                imprime_lcd(counter[1],40,55,40);
+                imprime_lcd(counter[2],60,55,40);
+                imprime_lcd(counter[3],80,55,40);
+                imprime_lcd(counter[4],100,55,40);
+                ssd1306_send_data(&ssd);
             }
-            //sleep_ms(3000);
             //Limpa o display
             ssd1306_fill(&ssd, false);
             ssd1306_send_data(&ssd);
@@ -220,7 +224,7 @@ int main() {
             ssd1306_send_data(&ssd);
             botaoA_flag=0;
             sleep_ms(3000);
-            full_reset();
+            //full_reset();
         }    
     }
 }
