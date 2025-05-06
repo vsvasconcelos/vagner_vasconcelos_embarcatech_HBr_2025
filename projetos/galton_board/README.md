@@ -12,7 +12,7 @@ O objetivo deste projeto é simular uma *Galton Board* no display OLED da [BitDo
 
 ---
 ## Link Wokwi
-[<center><img src="/projetos/galton_board/assets/normal.png"></center>]((https://wokwi.com/projects/430160171556376577)   
+[<center><img src="/projetos/galton_board/assets/normal.png"></center>](https://wokwi.com/projects/430160171556376577)   
 
 ## :wrench: Componentes usados 
 | Componente            | Quantidade    |
@@ -24,19 +24,19 @@ O objetivo deste projeto é simular uma *Galton Board* no display OLED da [BitDo
 Configure seu sistema conforme apresentado em [Lindevs](https://lindevs.com/set-up-raspberry-pi-pico-sdk-on-ubuntu).  
 
 ### Estrutura do projeto:    
-├── galton_board     
-        ├── CMakeLists.txt  
-        ├── assets       
-        ├── buid   
-        ├── docs   
-        ├── inc   
-        │   ├── font.h   
-        │   ├── ssd1306.c   
-        │   ├── ssd1306.h   
-        │   └── ws2818b.pio.h   
-        ├── README.md   
-        └── src   
-            ├── galton_board.c   
+- galton_board
+    - README.md   
+    - CMakeLists.txt  
+    - assets       
+    - buid   
+    - docs   
+    - inc    
+        - font.h      
+        - ssd1306.c     
+        - ssd1306.h     
+        - ws2818b.pio.h     
+    - src   
+        - galton_board.c   
 
 Dentro da pasta *buid*, na estrutura do projeto, digite os comandos:   
 > cmake ..   
