@@ -5,7 +5,7 @@
 ## :dart: Objetivo do projeto
 O *Galton Board* é um experimento fascinante que ilustra conceitos fundamentais de física e matemática de maneira visual e intuitiva. Inventado por Sir Francis Galton, este dispositivo demonstra como distribuições estatísticas emergem a partir de movimentos aleatórios, resultando em padrões previsíveis.    
 
-![video](https://i.imgur.com/DlXmBjO.mp4)
+![Galton Board](https://img.youtube.com/vi/VlX2TW8eBO0/hqdefault.jpg)](https://youtu.be/VlX2TW8eBO0 "Galton Board") 
 
 O Galton Board consiste em uma série de pinos dispostos geometricamente. Esferas são liberadas de um ponto central superior e, à medida que caem, colidem com os pinos e se desviam  aleatoriamente para a esquerda ou para a direita. Esse processo continua até que as esferas alcancem a base do tabuleiro, onde se acumulam em compartimentos distintos.    
 
@@ -31,6 +31,7 @@ Configure seu sistema conforme apresentado em [Lindevs](https://lindevs.com/set-
 ´´´ 
 
 ├── galton_board     
+        ├── CMakeLists.txt  
         ├── assets       
         ├── buid   
         ├── docs   
@@ -42,7 +43,7 @@ Configure seu sistema conforme apresentado em [Lindevs](https://lindevs.com/set-
         ├── README.md   
         └── src   
             ├── galton_board.c   
-            ├── CMakeLists.txt     
+            
 
 ´´´
 
