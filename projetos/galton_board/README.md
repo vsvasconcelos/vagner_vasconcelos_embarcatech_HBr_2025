@@ -1,5 +1,5 @@
 # Galton Board Digital com BitDogLab
-[<center><img src="/projetos/galton_board/assets/gb.png"></center>](https://zerodha.com/varsity/chapter/volatility-normal-distribution/)   
+[![Link Wokwi](/projetos/galton_board/assets/gb.png)](https://zerodha.com/varsity/chapter/volatility-normal-distribution/)
 
 ---
 ## :dart: Objetivo do projeto
