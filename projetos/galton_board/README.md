@@ -12,7 +12,7 @@ O objetivo deste projeto é simular uma *Galton Board* no display OLED da [BitDo
 
 ---
 ## Link Wokwi
-[<center><img src="/projetos/galton_board/assets/normal.png"></center>]("https://wokwi.com/projects/430160171556376577")      
+[![Link Wokwi](/projetos/galton_board/assets/normal.png)](https://wokwi.com/projects/430160171556376577)
 
 
 ## :wrench: Componentes usados 
