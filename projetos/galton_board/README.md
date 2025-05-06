@@ -66,7 +66,7 @@
 ### Demonstração
 
 <video width="320" height="240" controls>
-  <source src="/projetos/galton_board/assets/GaltonBoard.mp4" type="video/mp4">
+  <source src="projetos/galton_board/assets/GaltonBoard.mp4" type="video/mp4">
 </video>
 
 ---
