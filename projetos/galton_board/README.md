@@ -14,7 +14,7 @@ O objetivo deste projeto é simular uma *Galton Board* no display OLED da [BitDo
 ## Link Wokwi
 [![Link Wokwi](/projetos/galton_board/assets/normal.png)](https://wokwi.com/projects/430160171556376577)
 
-
+---
 ## :wrench: Componentes usados 
 | Componente            | Quantidade    |
 |-----------------------|---------------|
@@ -23,7 +23,7 @@ O objetivo deste projeto é simular uma *Galton Board* no display OLED da [BitDo
 
 ## :floppy_disk: Como compilar e executar o código   
 Configure seu sistema conforme apresentado em [Lindevs](https://lindevs.com/set-up-raspberry-pi-pico-sdk-on-ubuntu).  
-
+---
 ### Estrutura do projeto:    
 - galton_board
     - README.md   
@@ -47,14 +47,6 @@ Dentro da pasta *buid*, na estrutura do projeto, digite os comandos:
 - Copie o arquivo galton_board.uf2 para a BitDogLab.   
 - A Pico reiniciará automaticamente e começará a executar o código.   
 ---
-
-## :bulb: Pinagem dos dispositivos utilizados    
-
-| Componente            | Conexão na BitDogLab      |
-|-----------------------|---------------------------|
-| BitDogLab (RP2040)    | -                         |
-| 
----
 ## :movie_camera: Imagens e/ou vídeos do projeto em funcionamento
 
 [![Galton Board - BitDogLab](https://img.youtube.com/vi/MvGHO41h85w/hqdefault.jpg)](https://youtu.be/MvGHO41h85w "Galton Board") 
@@ -62,12 +54,12 @@ Dentro da pasta *buid*, na estrutura do projeto, digite os comandos:
 ---
 ## :chart_with_upwards_trend: Resultados esperados ou obtidos     
 
-Conforme os resultados obtidos, a simulação confirma a teoria, apresentando sempre uma distribuição normal.  
+Conforme os resultados obtidos, a simulação confirma a teoria, apresentando - na maioria das vezes -, uma distribuição normal.  
 A utilização do joystick, simulando um desbalanceamento conforme deslocamente para esquerda ou direita deu resultado na distribução, deixando de ser normal.
 
 ---
 
 # Referências
-- [Triangular arrays in C++](https://learningdaily.dev/triangular-array-in-c-6cd9e23a4715)  
-- [Raspberry Pi Pico Lecture 8 (2025): The statistics of a Galton Board](https://youtu.be/WMtEcMYWMq8?si=RMvh16KLScaHHHNR)
+[Triangular arrays in C++](https://learningdaily.dev/triangular-array-in-c-6cd9e23a4715)  
+[Raspberry Pi Pico Lecture 8 (2025): The statistics of a Galton Board](https://youtu.be/WMtEcMYWMq8?si=RMvh16KLScaHHHNR)
 
