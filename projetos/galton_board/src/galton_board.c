@@ -228,3 +228,6 @@ int main() {
         }    
     }
 }
+
+----
+sudo screen /dev/ttyACM0 115200
