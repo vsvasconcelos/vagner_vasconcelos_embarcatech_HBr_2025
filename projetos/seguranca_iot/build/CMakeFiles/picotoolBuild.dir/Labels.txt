@@ -1,0 +1,14 @@
+# Target labels
+ picotoolBuild
+# Source files and their labels
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/CMakeFiles/picotoolBuild
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/CMakeFiles/picotoolBuild.rule
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/CMakeFiles/picotoolBuild-complete.rule
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/picotool/src/picotoolBuild-stamp/picotoolBuild-build.rule
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/picotool/src/picotoolBuild-stamp/picotoolBuild-configure.rule
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/picotool/src/picotoolBuild-stamp/picotoolBuild-download.rule
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/picotool/src/picotoolBuild-stamp/picotoolBuild-install.rule
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir.rule
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/picotool/src/picotoolBuild-stamp/picotoolBuild-patch.rule
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/picotool/src/picotoolBuild-stamp/picotoolBuild-test.rule
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/picotool/src/picotoolBuild-stamp/picotoolBuild-update.rule

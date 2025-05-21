@@ -1,0 +1,7 @@
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/pioasm/CMakeFiles/pioasm.dir
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/pioasm/CMakeFiles/edit_cache.dir
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/pioasm/CMakeFiles/rebuild_cache.dir
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/pioasm/CMakeFiles/list_install_components.dir
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/pioasm/CMakeFiles/install.dir
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/pioasm/CMakeFiles/install/local.dir
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/pioasm/CMakeFiles/install/strip.dir

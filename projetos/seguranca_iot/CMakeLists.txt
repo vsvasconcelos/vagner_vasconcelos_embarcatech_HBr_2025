@@ -10,35 +10,43 @@ set(PICO_BOARD pico_w CACHE STRING "Board type")
 
 include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 
-project(conecta_wifi C CXX ASM)
+project(iot_security_lab C CXX ASM)
 
 
 pico_sdk_init()
 
 
 
-add_executable(conecta_wifi 
-                    src/main.c
-                    src/conecta_wifi.c)
+add_executable(iot_security_lab 
+                    src/iot_security_lab.c
+                    src/wifi_conn.c
+                    src/mqtt_comm.c
+                    src/xor_cipher.c
+                    )
 
-
-# fatal error: pico/stdlib.h: No such file or directory
 #https://github.com/raspberrypi/pico-sdk/issues/1140
-target_link_libraries(${PROJECT_NAME} 
-                        pico_stdlib
-                        pico_lwip_mbedtls
-                        )
+#https://github.com/raspberrypi/pico-examples/issues/278
+target_link_libraries(iot_security_lab
+        # Biblioteca padrão do Pico SDK, que fornece funções básicas para o RP2040 (GPIO, temporizadores, UART, etc.).
+        pico_stdlib
+        # Oferece suporte Wi-Fi (CYW43) com LwIP (pilha TCP/IP) em um modo thread-safe em segundo plano.
+        pico_cyw43_arch_lwip_threadsafe_background
+        # Adiciona suporte a cliente MQTT sobre o LwIP.
+        pico_lwip_mqtt
+        # A pilha Lightweight IP (LwIP), que fornece funcionalidades TCP/IP (HTTP, MQTT, UDP, DHCP, etc.).
+        pico_lwip
+        # O driver do chip Wi-Fi CYW43 (usado no Pico W).
+        pico_cyw43_driver
+        # pico_time
+        # pico_unique_id
+        )
 
-# https://github.com/raspberrypi/pico-examples/issues/278
-if (PICO_CYW43_SUPPORTED)
-    target_link_libraries(${PROJECT_NAME} pico_cyw43_arch_lwip_threadsafe_background)
-endif()
 
-target_include_directories(conecta_wifi PRIVATE
+target_include_directories(iot_security_lab PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
-pico_enable_stdio_usb(conecta_wifi 1)
-pico_enable_stdio_uart(conecta_wifi 0)
+pico_enable_stdio_usb(iot_security_lab 1)
+pico_enable_stdio_uart(iot_security_lab 0)
 
-pico_add_extra_outputs(conecta_wifi)
+pico_add_extra_outputs(iot_security_lab)
