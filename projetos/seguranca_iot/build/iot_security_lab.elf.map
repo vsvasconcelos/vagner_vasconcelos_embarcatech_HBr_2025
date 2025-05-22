@@ -5679,434 +5679,435 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .iplt           0x10017fa8        0x0
  .iplt          0x10017fa8        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x10017fa8    0x39fac
+.rodata         0x10017fa8    0x39fb4
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.main.str1.4
-                0x10017fa8     0x2140 CMakeFiles/iot_security_lab.dir/src/iot_security_lab.c.o
-                                 0x65 (size before relaxing)
+                0x10017fa8     0x2144 CMakeFiles/iot_security_lab.dir/src/iot_security_lab.c.o
+                                 0x69 (size before relaxing)
  .rodata.connect_to_wifi.str1.4
-                0x1001a0e8       0x3f CMakeFiles/iot_security_lab.dir/src/wifi_conn.c.o
+                0x1001a0ec       0x3f CMakeFiles/iot_security_lab.dir/src/wifi_conn.c.o
  .rodata.mqtt_connection_cb.str1.4
-                0x1001a0e8       0x52 CMakeFiles/iot_security_lab.dir/src/mqtt_comm.c.o
+                0x1001a0ec       0x52 CMakeFiles/iot_security_lab.dir/src/mqtt_comm.c.o
  .rodata.mqtt_pub_request_cb.str1.4
-                0x1001a0e8       0x47 CMakeFiles/iot_security_lab.dir/src/mqtt_comm.c.o
+                0x1001a0ec       0x47 CMakeFiles/iot_security_lab.dir/src/mqtt_comm.c.o
  .rodata.mqtt_setup.str1.4
-                0x1001a0e8       0x2a CMakeFiles/iot_security_lab.dir/src/mqtt_comm.c.o
+                0x1001a0ec       0x2a CMakeFiles/iot_security_lab.dir/src/mqtt_comm.c.o
  .rodata.mqtt_comm_publish.str1.4
-                0x1001a0e8       0x28 CMakeFiles/iot_security_lab.dir/src/mqtt_comm.c.o
+                0x1001a0ec       0x28 CMakeFiles/iot_security_lab.dir/src/mqtt_comm.c.o
  .rodata.panic.str1.4
-                0x1001a0e8       0x12 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x1001a0ec       0x12 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
  .rodata.spin_lock_claim_unused.str1.4
-                0x1001a0e8       0x1b CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x1001a0ec       0x1b CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
  .rodata.user_irq_claim_unused.str1.4
-                0x1001a0e8       0x1b CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x1001a0ec       0x1b CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ *fill*         0x1001a0ec        0x4 
  .rodata.at_the_end_of_time
-                0x1001a0e8        0x8 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x1001a0e8                at_the_end_of_time
+                0x1001a0f0        0x8 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x1001a0f0                at_the_end_of_time
  .rodata.timer_hardware_alarm_claim.str1.4
-                0x1001a0f0       0x22 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x1001a0f8       0x22 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
  .rodata.hard_assertion_failure.str1.4
-                0x1001a0f0        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x1001a0f8        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .rodata.missing_double_func_shim.str1.4
-                0x1001a0f0       0x18 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+                0x1001a0f8       0x18 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
  .rodata.missing_float_func_shim.str1.4
-                0x1001a0f0        0x1 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+                0x1001a0f8        0x1 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
  .rodata.str1.4
-                0x1001a0f0       0x48 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1001a0f8       0x48 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_84
-                0x1001a0f0        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1001a0f8        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_78
-                0x1001a0fc        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1001a104        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_54
-                0x1001a108        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1001a110        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_48
-                0x1001a114        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1001a11c        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_42
-                0x1001a120        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1001a128        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_34
-                0x1001a12c        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1001a134        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_26
-                0x1001a138        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1001a140        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata._ftoa.str1.4
-                0x1001a144       0x15 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x1001a14c       0x15 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .rodata._vsnprintf
-                0x1001a144      0x19c CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x1001a14c      0x19c CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .rodata.pow10.0
-                0x1001a2e0       0x50 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x1001a2e8       0x50 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .rodata.crlf_str.0
-                0x1001a330        0x2 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- *fill*         0x1001a332        0x2 
+                0x1001a338        0x2 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ *fill*         0x1001a33a        0x2 
  .rodata._resetd_driver
-                0x1001a334       0x20 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x1001a33c       0x20 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
  .rodata.desc_ms_os_20
-                0x1001a354       0xa6 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
- *fill*         0x1001a3fa        0x2 
+                0x1001a35c       0xa6 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+ *fill*         0x1001a402        0x2 
  .rodata.desc_bos
-                0x1001a3fc       0x21 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
-                0x1001a3fc                desc_bos
+                0x1001a404       0x21 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x1001a404                desc_bos
  .rodata.str1.4
-                0x1001a41d       0x13 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
- *fill*         0x1001a41d        0x3 
+                0x1001a425       0x13 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+ *fill*         0x1001a425        0x3 
  .rodata.__bi_197.0
-                0x1001a420        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x1001a428        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .rodata.str1.4
-                0x1001a42c       0x2a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x1001a434       0x2a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
  .rodata.usbd_desc_str
-                0x1001a42c       0x18 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x1001a434       0x18 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
  .rodata.usbd_desc_cfg
-                0x1001a444       0x54 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x1001a44c       0x54 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
  .rodata.usbd_desc_device
-                0x1001a498       0x12 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x1001a4a0       0x12 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
  .rodata.str1.4
-                0x1001a4aa       0x14 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x1001a4b2       0x14 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
  .rodata.str1.4
-                0x1001a4aa       0x48 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
- *fill*         0x1001a4aa        0x2 
+                0x1001a4b2       0x48 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+ *fill*         0x1001a4b2        0x2 
  .rodata.tud_task_ext
-                0x1001a4ac       0x8c CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
- .rodata        0x1001a538       0x1c CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x1001a4b4       0x8c CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+ .rodata        0x1001a540       0x1c CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
  .rodata._usbd_driver
-                0x1001a554       0x40 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x1001a55c       0x40 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
  .rodata.dns_send.isra.0.str1.4
-                0x1001a594       0x18 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.c.o
+                0x1001a59c       0x18 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.c.o
  .rodata.dns_check_entry.str1.4
-                0x1001a594       0x3b CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.c.o
+                0x1001a59c       0x3b CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.c.o
  .rodata.mem_free.str1.4
-                0x1001a594       0xb6 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.o
+                0x1001a59c       0xb6 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.o
  .rodata.mem_trim.str1.4
-                0x1001a594       0x49 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.o
+                0x1001a59c       0x49 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.o
  .rodata.mem_malloc.str1.4
-                0x1001a594       0x5f CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.o
+                0x1001a59c       0x5f CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.o
  .rodata.memp_malloc_pool.str1.4
-                0x1001a594       0x37 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
+                0x1001a59c       0x37 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
  .rodata.memp_free_pool.str1.4
-                0x1001a594       0x20 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
+                0x1001a59c       0x20 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
  .rodata.memp_pools
-                0x1001a594       0x24 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
-                0x1001a594                memp_pools
+                0x1001a59c       0x24 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
+                0x1001a59c                memp_pools
  .rodata.memp_PBUF_POOL
-                0x1001a5b8        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
-                0x1001a5b8                memp_PBUF_POOL
+                0x1001a5c0        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
+                0x1001a5c0                memp_PBUF_POOL
  .rodata.memp_PBUF
-                0x1001a5c4        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
-                0x1001a5c4                memp_PBUF
+                0x1001a5cc        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
+                0x1001a5cc                memp_PBUF
  .rodata.memp_SYS_TIMEOUT
-                0x1001a5d0        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
-                0x1001a5d0                memp_SYS_TIMEOUT
+                0x1001a5d8        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
+                0x1001a5d8                memp_SYS_TIMEOUT
  .rodata.memp_REASSDATA
-                0x1001a5dc        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
-                0x1001a5dc                memp_REASSDATA
+                0x1001a5e4        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
+                0x1001a5e4                memp_REASSDATA
  .rodata.memp_TCP_SEG
-                0x1001a5e8        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
-                0x1001a5e8                memp_TCP_SEG
+                0x1001a5f0        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
+                0x1001a5f0                memp_TCP_SEG
  .rodata.memp_TCP_PCB_LISTEN
-                0x1001a5f4        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
-                0x1001a5f4                memp_TCP_PCB_LISTEN
+                0x1001a5fc        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
+                0x1001a5fc                memp_TCP_PCB_LISTEN
  .rodata.memp_TCP_PCB
-                0x1001a600        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
-                0x1001a600                memp_TCP_PCB
+                0x1001a608        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
+                0x1001a608                memp_TCP_PCB
  .rodata.memp_UDP_PCB
-                0x1001a60c        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
-                0x1001a60c                memp_UDP_PCB
+                0x1001a614        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
+                0x1001a614                memp_UDP_PCB
  .rodata.memp_RAW_PCB
-                0x1001a618        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
-                0x1001a618                memp_RAW_PCB
+                0x1001a620        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
+                0x1001a620                memp_RAW_PCB
  .rodata.netif_add.str1.4
-                0x1001a624       0x42 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.c.o
+                0x1001a62c       0x42 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.c.o
  .rodata.pbuf_free.part.0.str1.4
-                0x1001a624       0x2a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
+                0x1001a62c       0x2a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
  .rodata.pbuf_alloc.str1.4
-                0x1001a624       0x1b CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
+                0x1001a62c       0x1b CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
  .rodata.pbuf_realloc.str1.4
-                0x1001a624       0x65 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
+                0x1001a62c       0x65 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
  .rodata.pbuf_add_header.str1.4
-                0x1001a624        0xa CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
+                0x1001a62c        0xa CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
  .rodata.pbuf_ref.str1.4
-                0x1001a624       0x12 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
+                0x1001a62c       0x12 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
  .rodata.pbuf_cat.str1.4
-                0x1001a624       0x2d CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
+                0x1001a62c       0x2d CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
  .rodata.pbuf_copy_partial_pbuf.str1.4
-                0x1001a624       0x33 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
+                0x1001a62c       0x33 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
  .rodata.pbuf_take.str1.4
-                0x1001a624       0x2e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
+                0x1001a62c       0x2e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
  .rodata.pbuf_take_at.str1.4
-                0x1001a624       0x17 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
+                0x1001a62c       0x17 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
  .rodata.pbuf_coalesce.str1.4
-                0x1001a624       0x11 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
+                0x1001a62c       0x11 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
  .rodata.raw_input.str1.4
-                0x1001a624       0x49 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.c.o
+                0x1001a62c       0x49 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.c.o
  .rodata.tcp_close_shutdown_fin.str1.4
-                0x1001a624        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+                0x1001a62c        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
  .rodata.tcp_free.str1.4
-                0x1001a624       0x11 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+                0x1001a62c       0x11 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
  .rodata.tcp_update_rcv_ann_wnd.str1.4
-                0x1001a624       0x3e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+                0x1001a62c       0x3e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
  .rodata.tcp_recved.str1.4
-                0x1001a624       0x26 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+                0x1001a62c       0x26 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
  .rodata.tcp_slowtmr.str1.4
-                0x1001a624      0x1c6 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+                0x1001a62c      0x1c6 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
  .rodata.tcp_seg_copy.str1.4
-                0x1001a624       0x1a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+                0x1001a62c       0x1a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
  .rodata.tcp_recv.str1.4
-                0x1001a624       0x27 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+                0x1001a62c       0x27 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
  .rodata.tcp_sent.str1.4
-                0x1001a624       0x27 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+                0x1001a62c       0x27 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
  .rodata.tcp_err.str1.4
-                0x1001a624       0x26 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+                0x1001a62c       0x26 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
  .rodata.tcp_poll.str1.4
-                0x1001a624       0x1e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+                0x1001a62c       0x1e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
  .rodata.tcp_pcb_remove.str1.4
-                0x1001a624       0x87 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+                0x1001a62c       0x87 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
  .rodata.tcp_abandon.str1.4
-                0x1001a624       0x31 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+                0x1001a62c       0x31 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
  .rodata.tcp_close_shutdown.str1.4
-                0x1001a624       0x55 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+                0x1001a62c       0x55 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
  .rodata.tcp_next_iss.str1.4
-                0x1001a624       0x1a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+                0x1001a62c       0x1a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
  .rodata.tcp_eff_send_mss_netif.str1.4
-                0x1001a624       0x27 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+                0x1001a62c       0x27 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
  .rodata.tcp_pcb_lists
-                0x1001a624       0x10 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
-                0x1001a624                tcp_pcb_lists
+                0x1001a62c       0x10 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+                0x1001a62c                tcp_pcb_lists
  .rodata.tcp_persist_backoff
-                0x1001a634        0x7 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
- *fill*         0x1001a63b        0x1 
+                0x1001a63c        0x7 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+ *fill*         0x1001a643        0x1 
  .rodata.tcp_backoff
-                0x1001a63c        0xd CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+                0x1001a644        0xd CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
  .rodata.tcp_parseopt.str1.4
-                0x1001a649       0x1a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
+                0x1001a651       0x1a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
  .rodata.tcp_oos_insert_segment.str1.4
-                0x1001a649       0x25 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
+                0x1001a651       0x25 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
  .rodata.tcp_free_acked_segments.isra.0.str1.4
-                0x1001a649       0x48 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
+                0x1001a651       0x48 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
  .rodata.tcp_receive.str1.4
-                0x1001a649      0x104 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
+                0x1001a651      0x104 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
  .rodata.tcp_input.str1.4
-                0x1001a649      0x1de CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
- *fill*         0x1001a649        0x3 
+                0x1001a651      0x1de CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
+ *fill*         0x1001a651        0x3 
  .rodata.tcp_input
-                0x1001a64c       0x28 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
+                0x1001a654       0x28 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
  .rodata.tcp_create_segment.str1.4
-                0x1001a674       0x59 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c       0x59 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcp_output_fill_options.part.0.str1.4
-                0x1001a674       0x13 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c       0x13 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcp_output_control_segment.str1.4
-                0x1001a674       0x29 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c       0x29 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcp_output_alloc_header.constprop.0.str1.4
-                0x1001a674       0x56 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c       0x56 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcp_write.str1.4
-                0x1001a674      0x13e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c      0x13e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcp_split_unsent_seg.str1.4
-                0x1001a674       0x55 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c       0x55 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcp_send_fin.str1.4
-                0x1001a674       0x88 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c       0x88 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcp_enqueue_flags.str1.4
-                0x1001a674       0xb1 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c       0xb1 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcp_rexmit_rto_prepare.str1.4
-                0x1001a674       0x24 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c       0x24 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcp_rexmit.str1.4
-                0x1001a674       0x18 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c       0x18 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcp_rexmit_fast.str1.4
-                0x1001a674       0x1d CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c       0x1d CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcp_rst.str1.4
-                0x1001a674       0x37 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c       0x37 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcp_send_empty_ack.str1.4
-                0x1001a674       0x20 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c       0x20 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcp_output.str1.4
-                0x1001a674       0x57 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c       0x57 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcp_rexmit_rto_commit.str1.4
-                0x1001a674       0x23 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c       0x23 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcp_rexmit_rto.str1.4
-                0x1001a674       0x1c CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c       0x1c CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcp_keepalive.str1.4
-                0x1001a674       0x1b CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c       0x1b CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcp_zero_window_probe.str1.4
-                0x1001a674       0x23 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+                0x1001a67c       0x23 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
  .rodata.tcpip_tcp_timer.str1.4
-                0x1001a674       0x3d CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.o
+                0x1001a67c       0x3d CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.o
  .rodata.sys_timeouts_init.str1.4
-                0x1001a674       0x36 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.o
+                0x1001a67c       0x36 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.o
  .rodata.lwip_cyclic_timers
-                0x1001a674       0x30 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.o
-                0x1001a674                lwip_cyclic_timers
+                0x1001a67c       0x30 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.o
+                0x1001a67c                lwip_cyclic_timers
  .rodata.udp_input.str1.4
-                0x1001a6a4       0x4e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.c.o
+                0x1001a6ac       0x4e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.c.o
  .rodata.udp_sendto_if_src.str1.4
-                0x1001a6a4       0x2e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.c.o
+                0x1001a6ac       0x2e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.c.o
  .rodata.dhcp_create_msg.str1.4
-                0x1001a6a4       0x40 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
+                0x1001a6ac       0x40 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
  .rodata.dhcp_inc_pcb_refcount.str1.4
-                0x1001a6a4       0x25 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
+                0x1001a6ac       0x25 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
  .rodata.dhcp_option_hostname.isra.0.str1.4
-                0x1001a6a4       0x95 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
+                0x1001a6ac       0x95 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
  .rodata.dhcp_recv
-                0x1001a6a4      0x1e0 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
+                0x1001a6ac      0x1e0 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
  .rodata.dhcp_set_struct.str1.4
-                0x1001a884       0x44 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
+                0x1001a88c       0x44 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
  .rodata.dhcp_inform.str1.4
-                0x1001a884       0x24 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
+                0x1001a88c       0x24 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
  .rodata.dhcp_network_changed_link_up.str1.4
-                0x1001a884       0x14 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
+                0x1001a88c       0x14 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
  .rodata.etharp_find_entry.str1.4
-                0x1001a884       0x41 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
+                0x1001a88c       0x41 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
  .rodata.etharp_raw.str1.4
-                0x1001a884       0x85 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
+                0x1001a88c       0x85 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
  .rodata.etharp_output_to_arp_index.str1.4
-                0x1001a884       0x30 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
+                0x1001a88c       0x30 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
  .rodata.etharp_get_entry.str1.4
-                0x1001a884       0x20 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
+                0x1001a88c       0x20 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
  .rodata.etharp_input.str1.4
-                0x1001a884       0x24 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
+                0x1001a88c       0x24 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
  .rodata.etharp_query.str1.4
-                0x1001a884       0x2a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
+                0x1001a88c       0x2a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
  .rodata.etharp_output.str1.4
-                0x1001a884        0xa CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
+                0x1001a88c        0xa CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
  .rodata.icmp_input.str1.4
-                0x1001a884       0x65 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o
+                0x1001a88c       0x65 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o
  .rodata.icmp_dest_unreach.str1.4
-                0x1001a884       0x2c CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o
+                0x1001a88c       0x2c CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o
  .rodata.ip_reass_free_complete_datagram.str1.4
-                0x1001a884       0x7e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o
+                0x1001a88c       0x7e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o
  .rodata.ip4_reass.str1.4
-                0x1001a884       0x70 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o
+                0x1001a88c       0x70 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o
  .rodata.ip4_frag.str1.4
-                0x1001a884       0x20 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o
+                0x1001a88c       0x20 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o
  .rodata.ip4_output_if.str1.4
-                0x1001a884       0x39 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o
+                0x1001a88c       0x39 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o
  .rodata.ip4addr_aton.str1.4
-                0x1001a884        0xa CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
+                0x1001a88c        0xa CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
  .rodata.ip4addr_aton
-                0x1001a884       0x14 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
+                0x1001a88c       0x14 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
  .rodata.ip_addr_broadcast
-                0x1001a898        0x4 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
-                0x1001a898                ip_addr_broadcast
+                0x1001a8a0        0x4 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
+                0x1001a8a0                ip_addr_broadcast
  .rodata.ip_addr_any
-                0x1001a89c        0x4 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
-                0x1001a89c                ip_addr_any
+                0x1001a8a4        0x4 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
+                0x1001a8a4                ip_addr_any
  .rodata.ethernet_output.str1.4
-                0x1001a8a0       0x31 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.o
+                0x1001a8a8       0x31 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.o
  .rodata.ethzero
-                0x1001a8a0        0x6 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.o
-                0x1001a8a0                ethzero
- *fill*         0x1001a8a6        0x2 
- .rodata.ethbroadcast
                 0x1001a8a8        0x6 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.o
-                0x1001a8a8                ethbroadcast
- .rodata.cyw43_read_bytes.str1.4
-                0x1001a8ae       0x1a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
- .rodata.cyw43_write_bytes.str1.4
-                0x1001a8ae        0xd CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
+                0x1001a8a8                ethzero
  *fill*         0x1001a8ae        0x2 
+ .rodata.ethbroadcast
+                0x1001a8b0        0x6 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.o
+                0x1001a8b0                ethbroadcast
+ .rodata.cyw43_read_bytes.str1.4
+                0x1001a8b6       0x1a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
+ .rodata.cyw43_write_bytes.str1.4
+                0x1001a8b6        0xd CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
+ *fill*         0x1001a8b6        0x2 
  .rodata.spi_gap01_sample0_program
-                0x1001a8b0        0x8 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
+                0x1001a8b8        0x8 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
  .rodata.spi_gap01_sample0_program_instructions
-                0x1001a8b8        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
+                0x1001a8c0        0xc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
  .rodata.cyw43_kso_set.str1.4
-                0x1001a8c4       0x23 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+                0x1001a8cc       0x23 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
  .rodata.cyw43_ll_sdpcm_poll_device.str1.4
-                0x1001a8c4       0x55 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+                0x1001a8cc       0x55 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
  .rodata.cyw43_sdpcm_send_common.str1.4
-                0x1001a8c4       0x22 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+                0x1001a8cc       0x22 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
  .rodata.cyw43_do_ioctl.part.0.str1.4
-                0x1001a8c4       0x53 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+                0x1001a8cc       0x53 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
  .rodata.reset_device_core.constprop.0.str1.4
-                0x1001a8c4       0x1a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+                0x1001a8cc       0x1a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
  .rodata.cyw43_ll_wifi_on.str1.4
-                0x1001a8c4       0x52 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+                0x1001a8cc       0x52 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
  .rodata.cyw43_ll_bus_init.str1.4
-                0x1001a8c4       0xea CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+                0x1001a8cc       0xea CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
  .rodata.cyw43_ll_wifi_pm.str1.4
-                0x1001a8c4       0x35 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+                0x1001a8cc       0x35 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
  .rodata.cyw43_ll_wifi_join.str1.4
-                0x1001a8c4       0x55 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+                0x1001a8cc       0x55 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
  .rodata.cyw43_ll_wifi_ap_init.str1.4
-                0x1001a8c4       0x45 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+                0x1001a8cc       0x45 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
  .rodata.cyw43_ll_wifi_ap_set_up.str1.4
-                0x1001a8c4        0x4 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+                0x1001a8cc        0x4 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
  .rodata.w43439A0_7_95_49_00_combined
-                0x1001a8c4    0x36fd8 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+                0x1001a8cc    0x36fd8 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
  .rodata.wifi_nvram_4343
-                0x1005189c      0x2e7 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
- *fill*         0x10051b83        0x1 
- .rodata        0x10051b84       0x72 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+                0x100518a4      0x2e7 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+ *fill*         0x10051b8b        0x1 
+ .rodata        0x10051b8c       0x72 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
  .rodata.cyw43_netif_output.str1.4
-                0x10051bf6       0x22 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o
+                0x10051bfe       0x22 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o
  .rodata.cyw43_cb_tcpip_init.str1.4
-                0x10051bf6        0x6 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o
+                0x10051bfe        0x6 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o
  .rodata.cyw43_cb_process_async_event.str1.4
-                0x10051bf6       0x28 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
- *fill*         0x10051bf6        0x2 
+                0x10051bfe       0x28 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
+ *fill*         0x10051bfe        0x2 
  .rodata.cyw43_cb_process_async_event
-                0x10051bf8       0xbc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
+                0x10051c00       0xbc CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
  .rodata.str1.4
-                0x10051cb4       0x9e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
+                0x10051cbc       0x9e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
  .rodata.cyw43_async_event_name_table
-                0x10051cb4      0x164 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
+                0x10051cbc      0x164 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
  .rodata.pio_claim_unused_sm.str1.4
-                0x10051e18       0x24 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+                0x10051e20       0x24 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
  .rodata.dma_claim_unused_channel.str1.4
-                0x10051e18       0x1e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
+                0x10051e20       0x1e CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
  .rodata.async_context_threadsafe_background_lock_check.str1.4
-                0x10051e18       0x20 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o
+                0x10051e20       0x20 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o
  .rodata.template
-                0x10051e18       0x38 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o
+                0x10051e20       0x38 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o
  .rodata.mqtt_close.str1.4
-                0x10051e50       0x1b CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/apps/mqtt/mqtt.c.o
+                0x10051e58       0x1b CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/apps/mqtt/mqtt.c.o
  .rodata.mqtt_cyclic_timer.str1.4
-                0x10051e50       0x22 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/apps/mqtt/mqtt.c.o
+                0x10051e58       0x22 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/apps/mqtt/mqtt.c.o
  .rodata.mqtt_output_send.str1.4
-                0x10051e50       0x3d CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/apps/mqtt/mqtt.c.o
+                0x10051e58       0x3d CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/apps/mqtt/mqtt.c.o
  .rodata.mqtt_message_received.str1.4
-                0x10051e50       0x21 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/apps/mqtt/mqtt.c.o
+                0x10051e58       0x21 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/apps/mqtt/mqtt.c.o
  .rodata.mqtt_tcp_recv_cb.str1.4
-                0x10051e50       0x4a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/apps/mqtt/mqtt.c.o
+                0x10051e58       0x4a CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/apps/mqtt/mqtt.c.o
  .rodata.mqtt_tcp_err_cb.str1.4
-                0x10051e50       0x20 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/apps/mqtt/mqtt.c.o
+                0x10051e58       0x20 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/apps/mqtt/mqtt.c.o
  .rodata.mqtt_publish.str1.4
-                0x10051e50       0x71 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/apps/mqtt/mqtt.c.o
+                0x10051e58       0x71 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/apps/mqtt/mqtt.c.o
  .rodata.mqtt_client_connect.str1.4
-                0x10051e50       0xac CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/apps/mqtt/mqtt.c.o
- .rodata        0x10051e50      0x101 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-ctype_.o)
-                0x10051e50                _ctype_
-                0x10051f54                        . = ALIGN (0x4)
- *fill*         0x10051f51        0x3 
+                0x10051e58       0xac CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/lib/lwip/src/apps/mqtt/mqtt.c.o
+ .rodata        0x10051e58      0x101 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-ctype_.o)
+                0x10051e58                _ctype_
+                0x10051f5c                        . = ALIGN (0x4)
+ *fill*         0x10051f59        0x3 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10051f54                        . = ALIGN (0x4)
+                0x10051f5c                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10051f54                        __exidx_start = .
+                0x10051f5c                        __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10051f54                        __exidx_end = .
-                0x10051f54                        . = ALIGN (0x4)
-                0x10051f54                        __binary_info_start = .
+                0x10051f5c                        __exidx_end = .
+                0x10051f5c                        . = ALIGN (0x4)
+                0x10051f5c                        __binary_info_start = .
 
-.binary_info    0x10051f54       0x20
+.binary_info    0x10051f5c       0x20
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr84
-                0x10051f54        0x4 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr78
-                0x10051f58        0x4 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr54
                 0x10051f5c        0x4 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr48
+ .binary_info.keep.__bi_ptr78
                 0x10051f60        0x4 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr42
+ .binary_info.keep.__bi_ptr54
                 0x10051f64        0x4 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr34
+ .binary_info.keep.__bi_ptr48
                 0x10051f68        0x4 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr26
+ .binary_info.keep.__bi_ptr42
                 0x10051f6c        0x4 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .binary_info.keep.__bi_ptr34
+                0x10051f70        0x4 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .binary_info.keep.__bi_ptr26
+                0x10051f74        0x4 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  *(.binary_info.*)
  .binary_info.__bi_ptr197
-                0x10051f70        0x4 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-                0x10051f74                        __binary_info_end = .
+                0x10051f78        0x4 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10051f7c                        __binary_info_end = .
 
-.rel.dyn        0x10051f74        0x0
- .rel.iplt      0x10051f74        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x10051f74                        . = ALIGN (0x4)
+.rel.dyn        0x10051f7c        0x0
+ .rel.iplt      0x10051f7c        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x10051f7c                        . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -6126,7 +6127,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  .uninitialized_data.rng_state
                 0x200000d0       0x10 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.o
 
-.data           0x200000e0     0x11a0 load address 0x10051f74
+.data           0x200000e0     0x11a0 load address 0x10051f7c
                 0x200000e0                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -6263,23 +6264,23 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x20001280                        . = ALIGN (0x4)
 
 .tm_clone_table
-                0x20001280        0x0 load address 0x10053114
+                0x20001280        0x0 load address 0x1005311c
  .tm_clone_table
                 0x20001280        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20001280        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x20001280        0x0 load address 0x10053114
+.igot.plt       0x20001280        0x0 load address 0x1005311c
  .igot.plt      0x20001280        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.tdata          0x20001280        0x0 load address 0x10053114
+.tdata          0x20001280        0x0 load address 0x1005311c
                 0x20001280                        . = ALIGN (0x4)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x20001280                        __tdata_end = .
                 0x20001280                        PROVIDE (__data_end__ = .)
-                0x10051f74                        __etext = LOADADDR (.data)
+                0x10051f7c                        __etext = LOADADDR (.data)
 
-.tbss           0x20001280        0x0 load address 0x10053114
+.tbss           0x20001280        0x0 load address 0x1005311c
                 0x20001280                        . = ALIGN (0x4)
                 0x20001280                        __bss_start__ = .
                 0x20001280                        __tls_base = .
@@ -6287,7 +6288,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.tcommon)
                 0x20001280                        __tls_end = .
 
-.bss            0x20001280     0xcbe4 load address 0x10053114
+.bss            0x20001280     0xcbe4 load address 0x1005311c
                 0x20001280                        . = ALIGN (0x4)
                 0x20001280                        __tbss_end = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -6583,26 +6584,26 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x2000de64                        . = ALIGN (0x4)
                 0x2000de64                        __bss_end__ = .
 
-.heap           0x2000de64      0x800 load address 0x10053114
+.heap           0x2000de64      0x800 load address 0x1005311c
                 0x2000de64                        __end__ = .
                 0x2000de64                        end = __end__
  *(.heap*)
  .heap          0x2000de64      0x800 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
                 0x20040000                        __HeapLimit = (ORIGIN (RAM) + LENGTH (RAM))
 
-.scratch_x      0x20040000        0x0 load address 0x10053114
+.scratch_x      0x20040000        0x0 load address 0x1005311c
                 0x20040000                        __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                        . = ALIGN (0x4)
                 0x20040000                        __scratch_x_end__ = .
-                0x10053114                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x1005311c                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x10053114
+.scratch_y      0x20041000        0x0 load address 0x1005311c
                 0x20041000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                        . = ALIGN (0x4)
                 0x20041000                        __scratch_y_end__ = .
-                0x10053114                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x1005311c                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .stack1_dummy
  *(.stack1*)
@@ -6611,9 +6612,9 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/iot_security_lab.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 
-.flash_end      0x10053114        0x0
+.flash_end      0x1005311c        0x0
  *(.embedded_end_block*)
-                0x10053114                        PROVIDE (__flash_binary_end = .)
+                0x1005311c                        PROVIDE (__flash_binary_end = .)
                 0x20040000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
