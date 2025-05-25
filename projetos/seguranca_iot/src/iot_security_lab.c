@@ -12,11 +12,12 @@ int main() {
     
     // Conecta à rede WiFi
     // Parâmetros: Nome da rede (SSID) e senha
-    connect_to_wifi("NETVIRTUA480", "XXXXXXXX");
+    connect_to_wifi("NETVIRTUA480", "07101972");
 
     // Configura o cliente MQTT
     // Parâmetros: ID do cliente, IP do broker, usuário, senha
     mqtt_setup("bitdog1", "192.168.0.118", "vagner", "senha123");
+
 
     // Mensagem original a ser enviada
     const char *mensagem = "26.5";

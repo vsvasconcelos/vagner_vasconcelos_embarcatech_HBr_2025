@@ -1,6 +1,6 @@
-set(CMAKE_HOST_SYSTEM "Linux-6.11.0-25-generic")
+set(CMAKE_HOST_SYSTEM "Linux-6.11.0-26-generic")
 set(CMAKE_HOST_SYSTEM_NAME "Linux")
-set(CMAKE_HOST_SYSTEM_VERSION "6.11.0-25-generic")
+set(CMAKE_HOST_SYSTEM_VERSION "6.11.0-26-generic")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
 include("/home/vagner/pico/pico-sdk/cmake/preload/toolchains/pico_arm_cortex_m0plus_gcc.cmake")
