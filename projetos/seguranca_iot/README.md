@@ -9,7 +9,7 @@ Verificar como implementar autenticação, criptografia e proteção contra ataq
 - Objetivo: inicializar a conexão de rede via Wi-Fi usando o SDK Pico W + lwIP   
 
 Para realizar a conexão, é necessário ajustar no arquivo "iot_security_lab.c", os parâmetros do ponto de acesso (SSID e senha) ao qual se deseja acessar: 
-connect_to_wifi("SSID", "senha")  
+> connect_to_wifi("SSID", "senha")  
 
 Monitorando o canal serial, caso ocorra a conexão, deve aparecer: 
 
@@ -19,12 +19,17 @@ Monitorando o canal serial, caso ocorra a conexão, deve aparecer:
 ## Etapa 2: Setup MQTT básico para IoT  
 - Objetivo: Conectar um dispositivo embarcado a um broker MQTT e publicar dados em tópicos específicos, com tratamento básico de erros.  
 
-O disposito embarcado será a BitDogLab e o broker MQTT o computador pessoal. Será utilizado do broker MQTT [mosquitto](https://mosquitto.org/), cuja instalação no SO Ubunto foi realizada utilizando o comando: > sudo apt install mosquitto; também foi instalados os clientes mosquitto_sub e mosquitto_pub de forma a permitir os testes do broker, a instalação ocorreu com o comando:  > sudo apt install mosquitto-clients   
+O disposito embarcado será a BitDogLab e o broker MQTT o computador pessoal (notebook). Será utilizado como broker MQTT a aplicação [mosquitto](https://mosquitto.org/), cuja instalação no SO Ubunto foi realizada utilizando o comando:
+> sudo apt install mosquitto   
+
+também foi instalados os clientes mosquitto_sub e mosquitto_pub de forma a permitir os testes do broker, a instalação ocorreu com o comando: 
+> sudo apt install mosquitto-clients   
 
 Para verificar se o broker mosquitto está em execução, foi utilizado o comando:
 > sudo /etc/init.d/mosquitto status   
 
-Estando tudo correto, o comando acima informa: > Active: active (running)  
+Estando tudo correto, o comando acima deve informar:
+> Active: active (running)  
 
 Para testar a assinatura e publicação no broker, foram utilizados os próprios clientes - mosquitto_sub e mosquitto_pub.   
 
@@ -38,8 +43,8 @@ Conforme comandos acima, não foi utilizado autenticação (usuário/senha). Tod
 
 Contudo, a conectação da BitDogLab no broker mosquitto não é mais uma conexão local, sendo assim, é necessário a configuração do broker para aceitar conexões remotas, isso ocorre por meio do arquivo "/etc/mosquitto/mosquitto.conf", acrescentando as seguintes linhas: 
 
-listener 1883 0.0.0.0  # Escuta em todas as interfaces IPv4
-allow_anonymous true   # Permite acesso sem autenticação
+> listener 1883 0.0.0.0  # Escuta em todas as interfaces IPv4
+> allow_anonymous true   # Permite acesso sem autenticação
 
 Para as alterações serem atualizadas pelo mosquitto é necessário parar totalmente o broker, isso pode ser realizado com o seguinte comando:   
 > sudo /etc/init.d/mosquitto stop   
@@ -57,7 +62,7 @@ IMPORTANTE: observe que agora NÃO DEVE mais aparecer a mensagem: "Starting in l
 
 Para realizar a conexão da BitDogLab ao broker MQTT, é necessário ainda ajustar no arquivo "iot_security_lab.c", os parâmetros da função: 
 
-mqtt_setup("ID do cliente", "IP do broker (notebook)", "usuário", "senha")
+> mqtt_setup("ID do cliente", "IP do broker (notebook)", "usuário", "senha")
 
 Sendo que como permitimos acesso sem autenticação (allow_anonymous true), não necessitamos acrescentar usuário/senha neste momento. Monitorando o canal serial, deve aparecer: 
 
@@ -65,8 +70,8 @@ Sendo que como permitimos acesso sem autenticação (allow_anonymous true), não
 *Conectado ao broker MQTT com sucesso!*
 
 Para publicar dados em tópicos específicos, devem ser ajustados no arquivo "iot_security_lab.c" as linhas:   
-const char *mensagem = "26.5"; e 
-mqtt_comm_publish("escola/sala1/temperatura", mensagem, strlen(mensagem))
+> const char *mensagem = "26.5"; e 
+> mqtt_comm_publish("escola/sala1/temperatura", mensagem, strlen(mensagem))
 
 
 Abrindo uma nova janela console e subscrevendo o tópico em questão, a mensagem "26,5" deve ser apresentada.
@@ -84,26 +89,28 @@ Monitorando o canal serial, deve aparecer:
 
 Utilizando o analizador de pacotes de rede [Wireshark](https://pt.wikipedia.org/wiki/Wireshark) conseguimos monitorar a troca de informações entre a BitDogLab (pub) e o broker mosquitto.  E conforme destacado na figiura abaixo, é possível ver abertamente a informação (mensagem) transmitida (26,5), evidência a ausência de segurança neste modo de comunicação.   
 
-[![wireshark_3](/projetos/seguranca_iot/assets/wireshark_3.png)]()
+![wireshark_3](projetos/seguranca_iot/assets/wireshark_3.png)
+
 ---
 ## Etapa 4: Autenticação básica no Mosquitto
 
 - Objetivo: Adicionar autenticação simples no broker e configurar no cliente.   
 
-O arquivo foi alterado, mudando o atributo "allow_anonymous" de true para false, isto é, impedindo conexões sem autenticação e ainda acrescentando o caminho para o arquivo de usuários/senha: 
+O arquivo de configuração (mosquitto.conf) foi alterado, mudando o atributo "allow_anonymous" de true para false, isto é, impedindo conexões sem autenticação e ainda acrescentando o caminho para o arquivo de usuários/senha: 
 
-allow_anonymous false
-password_file /etc/mosquitto/passwd
+> allow_anonymous false
+> password_file /etc/mosquitto/passwd
 
 Para criar o arquivo de usuários/senhas, foi utilizado o comando abaixo:   
 > sudo mosquitto_passwd -c /etc/mosquitto/passwd vagner    
+
 Sendo: o usuário "vagner".
 IMPORTANTE: o parâmento "-c" só deve ser utilizado para o primeiro usuário.
 
 Após o comando, o sistema solicita a senha do usuário é gera o hash da senha, completando o arquivo passwd, ex.:
-vagner:$7$101$DyYgGMGsUnsPOQur$NogHKBm29STNK+0kpCCHwOiq07k6lPzFCuqi4tQupfMxaV967AWOEUnt/UN8aPoo1ksb4m8INxySUcEKvYoCZg==
+> vagner:$7$101$DyYgGMGsUnsPOQur$NogHKBm29STNK+0kpCCHwOiq07k6lPzFCuqi4tQupfMxaV967AWOEUnt/UN8aPoo1ksb4m8INxySUcEKvYoCZg==
 
-É necessário ainda ajustar as permissões do arquivo:
+É necessário ainda ajustar as permissões do arquivo:    
 > sudo chown mosquitto:mosquitto /etc/mosquitto/passwd
 > sudo chmod 600 /etc/mosquitto/passwd
 
@@ -135,13 +142,75 @@ Na console do mosquitto:
 *1748909655: Sending CONNACK to bitdog1 (0, 0)*
 *1748909655: Received PUBLISH from bitdog1 (d0, q0, r0, m0, 'escola/sala1/temperatura', ... (4 bytes))*
 
- Apesar da melhoria da segurança com a necessidade do dispositivo se autenticar no broker, com o wireshark ainda é possível visualizar as mensagens trocadas.
+ Apesar da melhoria da segurança com a necessidade do dispositivo se autenticar no broker, com o Wireshark ainda é possível visualizar as mensagens trocadas.
 
 
 ## Etapa 5: Simulando criptografia leve (XOR)
 
 - Objetivo: Ofuscar o conteúdo para evitar sniffing básico
 
+Agora, além da autenticação dos dispositivos, as mensagens serão criptografadas, para isso, é necessário realizar os seguintes ajustes no arquivo "iot_security_lab.c":    
+Comentar a linha:
+> // mqtt_comm_publish("escola/sala1/temperatura", mensagem, strlen(mensagem));
+Retirar os comentários da linha:
+>  mqtt_comm_publish("escola/sala1/temperatura", criptografada, strlen(mensagem));
+
+Com isso, antes do envio, as mensagens serão criptogradas conforme o código abaixo:
+> xor_encrypt((uint8_t *)mensagem, criptografada, strlen(mensagem), 42);   
+
+Verificando no wireshark ...
+
+
+*Subscriber consegue decifrar aplicando a mesma função XOR*
+
+
+
 ## Etapa 6: Proteção contra replay
 
 - Objetivo: Adicionar timestamp e validar mensagens no subscriber
+
+Para acrescentar o timestamp no Publisher, deve ser acrescentado o código:
+> #include <time.h>
+> sprintf(buffer, "{\"valor\":26.5,\"ts\":%lu}", time(NULL));
+> mqtt_publish(client, "escola/sala1/temperatura", buffer, strlen(buffer), 0, 0, NULL, NULL);
+
+Já no Subscriber:  
+#include <stdint.h>
+
+uint32_t ultima_timestamp_recebida = 0; // Usando uint32_t para maior clareza
+
+// Doc: https://www.nongnu.org/lwip/2_1_x/group__mqtt.html#gafec7e75fe6a746eef9ca411463446c81
+// Exemplo simplificado de callback dos dados MQTT recebidos, ver link da documentação para mais informações
+void on_message(char* topic, char* msg) {
+    // 1. Parse do JSON (exemplo simplificado)
+    uint32_t nova_timestamp;
+    float valor;
+    if (sscanf(msg, "{\"valor\":%f,\"ts\":%lu}", &valor, &nova_timestamp) != 2) {
+        printf("Erro no parse da mensagem!\n");
+        return;
+    }
+
+    // 2. Verificação de replay
+    if (nova_timestamp > ultima_timestamp_recebida) {
+        ultima_timestamp_recebida = nova_timestamp;
+        printf("Nova leitura: %.2f (ts: %lu)\n", valor, nova_timestamp);
+        
+        // --> Processar dados aqui <--
+        
+    } else {
+        printf("Replay detectado (ts: %lu <= %lu)\n", 
+               nova_timestamp, ultima_timestamp_recebida);
+    }
+}
+
+// Conecta à rede WiFi
+// Parâmetros: Nome da rede (SSID) e senha
+connect_to_wifi("SSID da rede", "Senha da rede");
+
+// Configura o cliente MQTT
+// Parâmetros: ID do cliente, IP do broker, usuário, senha
+mqtt_setup("bitdog2", "IP do broker", "aluno", "senha123");
+
+
+// https://www.nongnu.org/lwip/2_1_x/group__mqtt.html#ga83d6a6d811b201a74d793bc1b5d4e029
+mqtt_subscribe(client, "escola/sala1/temperatura", 0, on_message, "escola/sala1/temperatura");
