@@ -25,5 +25,6 @@ void connect_to_wifi(const char *ssid, const char *password) {
         printf("Erro ao conectar\n");  // Se falhar, imprime mensagem de erro.
     } else {       
         printf("Conectado ao Wi-Fi\n");  // Se conectar com sucesso, exibe confirmação.
+        sleep_ms(5000);
     }
 }

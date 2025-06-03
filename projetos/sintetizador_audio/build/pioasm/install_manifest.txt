@@ -1,0 +1,5 @@
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/sintetizador_audio/build/pioasm-install/pioasm/pioasm
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/sintetizador_audio/build/pioasm-install/pioasm/pioasmTargets.cmake
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/sintetizador_audio/build/pioasm-install/pioasm/pioasmTargets-release.cmake
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/sintetizador_audio/build/pioasm-install/pioasm/pioasmConfig.cmake
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/sintetizador_audio/build/pioasm-install/pioasm/pioasmConfigVersion.cmake
