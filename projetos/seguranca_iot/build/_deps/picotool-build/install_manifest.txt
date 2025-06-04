@@ -3,3 +3,5 @@
 /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/_deps/picotool/picotoolTargets-release.cmake
 /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/_deps/picotool/picotoolConfig.cmake
 /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/_deps/picotool/picotoolConfigVersion.cmake
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/_deps/picotool/enc_bootloader.elf
+/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/_deps/picotool/enc_bootloader_mbedtls.elf

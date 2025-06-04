@@ -247,7 +247,20 @@ CMakeFiles/picotool.dir/main.cpp.o: \
  /usr/include/c++/14/bits/regex_compiler.tcc \
  /usr/include/c++/14/bits/regex.h /usr/include/c++/14/bits/regex.tcc \
  /usr/include/c++/14/bits/regex_executor.h \
- /usr/include/c++/14/bits/regex_executor.tcc /usr/include/c++/14/cuchar \
+ /usr/include/c++/14/bits/regex_executor.tcc /usr/include/c++/14/random \
+ /usr/include/c++/14/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/14/bits/random.h \
+ /usr/include/x86_64-linux-gnu/c++/14/bits/opt_random.h \
+ /usr/include/c++/14/bits/random.tcc /usr/include/c++/14/cuchar \
  /usr/include/uchar.h /usr/include/c++/14/set \
  /usr/include/c++/14/bits/stl_set.h \
  /usr/include/c++/14/bits/stl_multiset.h /usr/include/c++/14/array \
@@ -258,6 +271,11 @@ CMakeFiles/picotool.dir/main.cpp.o: \
  /home/vagner/pico/pico-sdk/src/host/pico_platform/include/pico/platform.h \
  /home/vagner/pico/pico-sdk/src/rp2350/hardware_regs/include/hardware/platform_defs.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
+ /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/_deps/picotool-src/get_enc_bootloader.h \
+ /usr/include/c++/14/fstream \
+ /usr/include/x86_64-linux-gnu/c++/14/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/14/bits/c++io.h \
+ /usr/include/c++/14/bits/fstream.tcc \
  /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/_deps/picotool-src/picoboot_connection/picoboot_connection.h \
  /home/vagner/pico/pico-sdk/src/common/boot_picoboot_headers/include/boot/picoboot.h \
  /home/vagner/pico/pico-sdk/src/common/boot_picoboot_headers/include/boot/picoboot_constants.h \
@@ -288,10 +306,6 @@ CMakeFiles/picotool.dir/main.cpp.o: \
  /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/pk.h \
  /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/version.h \
  /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/_deps/picotool-src/elf/elf_file.h \
- /usr/include/c++/14/fstream \
- /usr/include/x86_64-linux-gnu/c++/14/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/14/bits/c++io.h \
- /usr/include/c++/14/bits/fstream.tcc \
  /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/_deps/picotool-src/elf/elf.h \
  /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/_deps/picotool-src/elf/addresses.h \
  /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/_deps/picotool-src/bintool/metadata.h \
@@ -314,17 +328,7 @@ CMakeFiles/picotool.dir/main.cpp.o: \
  /usr/include/c++/14/bits/hashtable.h \
  /usr/include/c++/14/bits/hashtable_policy.h \
  /usr/include/c++/14/bits/enable_special_members.h \
- /usr/include/c++/14/valarray /usr/include/c++/14/cmath \
- /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/14/bits/valarray_array.h \
+ /usr/include/c++/14/valarray /usr/include/c++/14/bits/valarray_array.h \
  /usr/include/c++/14/bits/valarray_array.tcc \
  /usr/include/c++/14/bits/valarray_before.h \
  /usr/include/c++/14/bits/slice_array.h \

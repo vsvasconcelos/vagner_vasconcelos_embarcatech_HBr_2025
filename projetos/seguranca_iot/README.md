@@ -2,7 +2,7 @@
 
 ---
 ## :dart: Objetivo do projeto
-Verificar como implementar autenticação, criptografia e proteção contra ataques em comunicação MQTT com a BitDogLab.
+Implementar autenticação, criptografia e proteção contra ataques em comunicação MQTT com a BitDogLab.
 
 ---
 ## Etapa 1: Conectando a BitDogLab ao Wi-Fi
@@ -43,14 +43,14 @@ Conforme comandos acima, não foi utilizado autenticação (usuário/senha). Tod
 
 Contudo, a conectação da BitDogLab no broker mosquitto não é mais uma conexão local, sendo assim, é necessário a configuração do broker para aceitar conexões remotas, isso ocorre por meio do arquivo "/etc/mosquitto/mosquitto.conf", acrescentando as seguintes linhas: 
 
-> listener 1883 0.0.0.0  # Escuta em todas as interfaces IPv4
-> allow_anonymous true   # Permite acesso sem autenticação
+> listener 1883 0.0.0.0  # Escuta em todas as interfaces IPv4      
+> allow_anonymous true   # Permite acesso sem autenticação     
 
 Para as alterações serem atualizadas pelo mosquitto é necessário parar totalmente o broker, isso pode ser realizado com o seguinte comando:   
 > sudo /etc/init.d/mosquitto stop   
 
 Para verificar se não há mais nenhuma conexão com o broker, utilize o comando:   
-> sudo netstat -anp | grep mosquitto
+> sudo netstat -anp | grep mosquitto    
 
 Em existindo, utilize o comando:    
 > sudo pkill mosquitto  
@@ -144,73 +144,43 @@ Na console do mosquitto:
 
  Apesar da melhoria da segurança com a necessidade do dispositivo se autenticar no broker, com o Wireshark ainda é possível visualizar as mensagens trocadas.
 
+---  
 
 ## Etapa 5: Simulando criptografia leve (XOR)
 
 - Objetivo: Ofuscar o conteúdo para evitar sniffing básico
 
 Agora, além da autenticação dos dispositivos, as mensagens serão criptografadas, para isso, é necessário realizar os seguintes ajustes no arquivo "iot_security_lab.c":    
-Comentar a linha:
+Comentar a linha:   
 > // mqtt_comm_publish("escola/sala1/temperatura", mensagem, strlen(mensagem));
-Retirar os comentários da linha:
->  mqtt_comm_publish("escola/sala1/temperatura", criptografada, strlen(mensagem));
+Retirar os comentários da linha:    
+>  mqtt_comm_publish("escola/sala1/temperatura", criptografada, strlen(mensagem));   
 
 Com isso, antes do envio, as mensagens serão criptogradas conforme o código abaixo:
 > xor_encrypt((uint8_t *)mensagem, criptografada, strlen(mensagem), 42);   
 
 Verificando no wireshark ...
 
+![wireshark_5](projetos/seguranca_iot/assets/wireshark_5.png)
 
-*Subscriber consegue decifrar aplicando a mesma função XOR*
+... conforme observado na figura acima, agora a mensagem fica ofuscada!   
 
+Para conseguir decifrar a mensagem, o Subscriber deve aplicar a mesma função XOR. 
 
+#### TODO: Implementar a função de decifrar a mensagem em um subscrever na BitDogLab.  
+
+---    
 
 ## Etapa 6: Proteção contra replay
 
 - Objetivo: Adicionar timestamp e validar mensagens no subscriber
 
-Para acrescentar o timestamp no Publisher, deve ser acrescentado o código:
-> #include <time.h>
-> sprintf(buffer, "{\"valor\":26.5,\"ts\":%lu}", time(NULL));
-> mqtt_publish(client, "escola/sala1/temperatura", buffer, strlen(buffer), 0, 0, NULL, NULL);
+#### TODO: 
 
-Já no Subscriber:  
-#include <stdint.h>
+---   
+## Referências
+https://www.raspberrypi.com/documentation/pico-sdk/networking.html
+https://www.nongnu.org/lwip/2_1_x/group__mqtt.html
+https://github.com/cniles/picow-iot/tree/main
+https://github.com/danjperron/StairPersonDetector/tree/main
 
-uint32_t ultima_timestamp_recebida = 0; // Usando uint32_t para maior clareza
-
-// Doc: https://www.nongnu.org/lwip/2_1_x/group__mqtt.html#gafec7e75fe6a746eef9ca411463446c81
-// Exemplo simplificado de callback dos dados MQTT recebidos, ver link da documentação para mais informações
-void on_message(char* topic, char* msg) {
-    // 1. Parse do JSON (exemplo simplificado)
-    uint32_t nova_timestamp;
-    float valor;
-    if (sscanf(msg, "{\"valor\":%f,\"ts\":%lu}", &valor, &nova_timestamp) != 2) {
-        printf("Erro no parse da mensagem!\n");
-        return;
-    }
-
-    // 2. Verificação de replay
-    if (nova_timestamp > ultima_timestamp_recebida) {
-        ultima_timestamp_recebida = nova_timestamp;
-        printf("Nova leitura: %.2f (ts: %lu)\n", valor, nova_timestamp);
-        
-        // --> Processar dados aqui <--
-        
-    } else {
-        printf("Replay detectado (ts: %lu <= %lu)\n", 
-               nova_timestamp, ultima_timestamp_recebida);
-    }
-}
-
-// Conecta à rede WiFi
-// Parâmetros: Nome da rede (SSID) e senha
-connect_to_wifi("SSID da rede", "Senha da rede");
-
-// Configura o cliente MQTT
-// Parâmetros: ID do cliente, IP do broker, usuário, senha
-mqtt_setup("bitdog2", "IP do broker", "aluno", "senha123");
-
-
-// https://www.nongnu.org/lwip/2_1_x/group__mqtt.html#ga83d6a6d811b201a74d793bc1b5d4e029
-mqtt_subscribe(client, "escola/sala1/temperatura", 0, on_message, "escola/sala1/temperatura");

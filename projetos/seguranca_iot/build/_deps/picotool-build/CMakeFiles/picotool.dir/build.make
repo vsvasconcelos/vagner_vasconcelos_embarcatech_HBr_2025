@@ -79,6 +79,19 @@ CMakeFiles/picotool.dir/data_locs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/picotool.dir/data_locs.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/_deps/picotool-build/data_locs.cpp -o CMakeFiles/picotool.dir/data_locs.cpp.s
 
+CMakeFiles/picotool.dir/get_enc_bootloader.cpp.o: CMakeFiles/picotool.dir/flags.make
+CMakeFiles/picotool.dir/get_enc_bootloader.cpp.o: /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/_deps/picotool-src/get_enc_bootloader.cpp
+CMakeFiles/picotool.dir/get_enc_bootloader.cpp.o: CMakeFiles/picotool.dir/compiler_depend.ts
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/picotool.dir/get_enc_bootloader.cpp.o -MF CMakeFiles/picotool.dir/get_enc_bootloader.cpp.o.d -o CMakeFiles/picotool.dir/get_enc_bootloader.cpp.o -c /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/_deps/picotool-src/get_enc_bootloader.cpp
+
+CMakeFiles/picotool.dir/get_enc_bootloader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/picotool.dir/get_enc_bootloader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/_deps/picotool-src/get_enc_bootloader.cpp > CMakeFiles/picotool.dir/get_enc_bootloader.cpp.i
+
+CMakeFiles/picotool.dir/get_enc_bootloader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/picotool.dir/get_enc_bootloader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/_deps/picotool-src/get_enc_bootloader.cpp -o CMakeFiles/picotool.dir/get_enc_bootloader.cpp.s
+
 CMakeFiles/picotool.dir/no_otp.cpp.o: CMakeFiles/picotool.dir/flags.make
 CMakeFiles/picotool.dir/no_otp.cpp.o: /home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/seguranca_iot/build/_deps/picotool-src/no_otp.cpp
 CMakeFiles/picotool.dir/no_otp.cpp.o: CMakeFiles/picotool.dir/compiler_depend.ts
@@ -134,6 +147,7 @@ CMakeFiles/picotool.dir/lib/whereami/whereami++.cpp.s: cmake_force
 # Object files for target picotool
 picotool_OBJECTS = \
 "CMakeFiles/picotool.dir/data_locs.cpp.o" \
+"CMakeFiles/picotool.dir/get_enc_bootloader.cpp.o" \
 "CMakeFiles/picotool.dir/no_otp.cpp.o" \
 "CMakeFiles/picotool.dir/main.cpp.o" \
 "CMakeFiles/picotool.dir/lib/whereami/whereami.c.o" \
@@ -143,6 +157,7 @@ picotool_OBJECTS = \
 picotool_EXTERNAL_OBJECTS =
 
 picotool: CMakeFiles/picotool.dir/data_locs.cpp.o
+picotool: CMakeFiles/picotool.dir/get_enc_bootloader.cpp.o
 picotool: CMakeFiles/picotool.dir/no_otp.cpp.o
 picotool: CMakeFiles/picotool.dir/main.cpp.o
 picotool: CMakeFiles/picotool.dir/lib/whereami/whereami.c.o

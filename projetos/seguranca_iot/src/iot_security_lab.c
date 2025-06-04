@@ -11,8 +11,7 @@ int main() {
     stdio_init_all();
     
     // Conecta à rede WiFi
-    // Parâmetros: Nome da rede (SSID) e senha
-    connect_to_wifi("NETVIRTUA480", "07101972");
+    connect_to_wifi("SSID", "SENHA");
 
     // Configura o cliente MQTT
     // Parâmetros: ID do cliente, IP do broker, usuário, senha
@@ -20,7 +19,7 @@ int main() {
 
 
     // Mensagem original a ser enviada
-    const char *mensagem = "26.5";
+    const char *mensagem = "300";
     // Buffer para mensagem criptografada (16 bytes)
     uint8_t criptografada[16];
     // Criptografa a mensagem usando XOR com chave 42
@@ -29,12 +28,14 @@ int main() {
     // Loop principal do programa
     while (true) {
         // Publica a mensagem original (não criptografada)
-        mqtt_comm_publish("escola/sala1/temperatura", mensagem, strlen(mensagem));
+        //mqtt_comm_publish("escola/sala1/temperatura", mensagem, strlen(mensagem));
         
         // Alternativa: Publica a mensagem criptografada (atualmente comentada)
         // mqtt_comm_publish("escola/sala1/temperatura", criptografada, strlen(mensagem));
         
         // Aguarda 5 segundos antes da próxima publicação
+
+
         sleep_ms(5000);
     }
     return 0;
