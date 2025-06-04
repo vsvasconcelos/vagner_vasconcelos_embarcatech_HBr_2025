@@ -89,7 +89,7 @@ Monitorando o canal serial, deve aparecer:
 
 Utilizando o analizador de pacotes de rede [Wireshark](https://pt.wikipedia.org/wiki/Wireshark) conseguimos monitorar a troca de informações entre a BitDogLab (pub) e o broker mosquitto.  E conforme destacado na figiura abaixo, é possível ver abertamente a informação (mensagem) transmitida (26,5), evidência a ausência de segurança neste modo de comunicação.   
 
-![wireshark_3](assets/wireshark_3.png)
+![wireshark_3](projetos/seguranca_iot/assets/wireshark_3.png)
 
 
 ---
@@ -162,7 +162,7 @@ Com isso, antes do envio, as mensagens serão criptogradas conforme o código ab
 
 Verificando no wireshark ...
 
-![wireshark_5](assets/wireshark_5.png)
+![wireshark_5](projetos/seguranca_iot/assets/wireshark_5.png)
 
 
 ... conforme observado na figura acima, agora a mensagem fica ofuscada!   
