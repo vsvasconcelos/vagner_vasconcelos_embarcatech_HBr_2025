@@ -1,2 +1,0 @@
-/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/FreeRTOS/build/_deps/picotool-build/enc_bootloader/CMakeFiles/edit_cache.dir
-/home/vagner/pico/vagner_vasconcelos_embarcatech_HBr_2025/projetos/FreeRTOS/build/_deps/picotool-build/enc_bootloader/CMakeFiles/rebuild_cache.dir
