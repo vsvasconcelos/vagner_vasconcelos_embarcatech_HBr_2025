@@ -19,16 +19,16 @@ Compreender escalonamento e prioridades em RTOS.
 | BitDogLab (RP2040)    | 01            |
 ---
 ## Estrutura do projeto:    
-├── assets
-├── build
-├── CMakeLists.txt
-├── docs
-├── FreeRTOS
-├── include
-│   └── FreeRTOSConfig.h
-├── README.md
-└── src
-    └── main.c    
+├── assets    
+├── build    
+├── CMakeLists.txt    
+├── docs    
+├── FreeRTOS    
+├── include      
+│         └── FreeRTOSConfig.h    
+├── README.md     
+└── src        
+      └── main.c    
 
 ## :floppy_disk: Como compilar e executar o código   
 Dentro da pasta *buid*, na estrutura do projeto, digite os comandos:   
