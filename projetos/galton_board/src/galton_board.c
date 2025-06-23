@@ -21,7 +21,7 @@
 #define endereco 0x3C
 
 
-const int BTN_PIN_A = 5; 
+const int BTN_PIN_A = 5;
 volatile int botaoA_flag = 0;
 
 bool cor = true;
@@ -60,7 +60,7 @@ int main() {
     stdio_init_all();
     // Inicializa GPIO dos botoes A e B
     inicializa_IO();
-    // Seta interrupção do botão A para borda de Descida (Botão apertado) 
+    // Seta interrupção do botão A para borda de Descida (Botão apertado)
     gpio_set_irq_enabled_with_callback(BTN_PIN_A,
                                      GPIO_IRQ_EDGE_FALL,
                                      true,
@@ -117,7 +117,7 @@ int main() {
         ssd1306_rect(&ssd, 55-posicao, left, 10, posicao, cor, !cor); // Desenha um retângulo
         sleep_ms(25);
         //ssd1306_send_data(&ssd);
-    }  
+    }
     //Limpa display
     ssd1306_fill(&ssd, false);
     //ssd1306_send_data(&ssd);
@@ -126,11 +126,11 @@ int main() {
         cor = !cor;
         ssd1306_fill(&ssd, !cor); // Limpa o display
         ssd1306_rect(&ssd, 3, 3, 122, 58, cor, !cor); // Desenha um retângulo
-        ssd1306_draw_string(&ssd, " EMBARCATECH ", 15, 0); // Desenha uma string    
+        ssd1306_draw_string(&ssd, " EMBARCATECH ", 15, 0); // Desenha uma string
         ssd1306_draw_string(&ssd, "APERTE A PARA", 17, 20);
         ssd1306_draw_string(&ssd, "  INICIAR", 17, 35);
         ssd1306_send_data(&ssd); // Atualiza o display
-    
+
         if (botaoA_flag == 1){
             //Limpa o display
             ssd1306_fill(&ssd, false);
@@ -174,7 +174,7 @@ int main() {
                             col++;
                         }
                     }
-                    
+
                     //
                     imprime_lcd(myData[1][0],50,10,0);
                     imprime_lcd(myData[1][1],70,10,0);
@@ -225,9 +225,6 @@ int main() {
             botaoA_flag=0;
             sleep_ms(3000);
             //full_reset();
-        }    
+        }
     }
 }
-
-----
-sudo screen /dev/ttyACM0 115200

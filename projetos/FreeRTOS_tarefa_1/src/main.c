@@ -23,8 +23,8 @@ void buzzer_task();
 void vButton_A_Task(void *pvParameters);
 void vButton_B_Task(void *pvParameters);
 
-
-
+// teste
+//
 int main(){
 
     stdio_init_all();
@@ -46,7 +46,7 @@ int main(){
 }
 
 // A tarefa do LED RGB (troca de cores a cada 500ms)
-void led_task(){   
+void led_task(){
     const uint LED_G = 11;
     const uint LED_B = 12;
     const uint LED_R = 13;
@@ -57,7 +57,7 @@ void led_task(){
     gpio_set_dir(LED_B, GPIO_OUT);
     gpio_init(LED_R);
     gpio_set_dir(LED_R, GPIO_OUT);
-    
+
     int delay = 500;
 
     while (true) {
@@ -89,12 +89,12 @@ void led_task(){
             vTaskDelay(pdMS_TO_TICKS(delay));
             gpio_put(LED_R, 0);
         }
-        
+
     }
 }
 
 // A tarefa do buzzer (beep curto a cada 1 segundo)
-void buzzer_task(){ 
+void buzzer_task(){
 
     #define BUZZER_PIN 21
     #define BUZZER_FREQUENCY 100
@@ -115,7 +115,7 @@ void buzzer_task(){
     uint32_t top = clock_freq / frequency - 1;
     pwm_set_wrap(slice_num, top);
 
-   
+
     while (true){
 
         if (xSemaphoreTake(xButton_B_Semaphore, 0) == pdTRUE) {
@@ -130,7 +130,7 @@ void buzzer_task(){
             pwm_set_gpio_level(BUZZER_PIN, 0);
             vTaskDelay(pdMS_TO_TICKS(delay));
         }
-        
+
     }
 }
 
@@ -138,7 +138,7 @@ void buzzer_task(){
 
 // Tarefa: Lê o botão A e libera o semáforo quando pressionado
 void vButton_A_Task(void *pvParameters) {
-    gpio_init(BTN_A);       
+    gpio_init(BTN_A);
     gpio_set_dir(BTN_A, GPIO_IN);
     // Quando botao A é pressionado, vai para zero!
     gpio_pull_up(BTN_A);
@@ -146,7 +146,7 @@ void vButton_A_Task(void *pvParameters) {
 
         while (1) {
             // Botão A (Pressionado) & Flag button_pressed (false)
-            if (!gpio_get(BTN_A) && !button_pressed) { 
+            if (!gpio_get(BTN_A) && !button_pressed) {
                 button_pressed = true;
                 xSemaphoreGive(xButton_A_Semaphore);  // Libera o semáforo (botão pressionado)
             } else if (gpio_get(BTN_A) && button_pressed) {
@@ -154,13 +154,13 @@ void vButton_A_Task(void *pvParameters) {
                 xSemaphoreGive(xButton_A_Semaphore);  // Libera o semáforo (botão solto)
             }
             // Lê o botão a cada 100 ms
-            vTaskDelay(pdMS_TO_TICKS(100));  // 
+            vTaskDelay(pdMS_TO_TICKS(100));  //
         }
 }
 
 // Tarefa: Lê o botão e libera o semáforo quando pressionado
 void vButton_B_Task(void *pvParameters) {
-    gpio_init(BTN_B);       
+    gpio_init(BTN_B);
     gpio_set_dir(BTN_B, GPIO_IN);
     // Quando botao B é pressionado, vai para zero!
     gpio_pull_up(BTN_B);
@@ -168,7 +168,7 @@ void vButton_B_Task(void *pvParameters) {
 
         while (1) {
             // Botão B (Pressionado) & Flag button_pressed (false)
-            if (!gpio_get(BTN_A) && !button_pressed) { 
+            if (!gpio_get(BTN_A) && !button_pressed) {
                 button_pressed = true;
                 xSemaphoreGive(xButton_B_Semaphore);  // Libera o semáforo (botão pressionado)
             } else if (gpio_get(BTN_A) && button_pressed) {
@@ -176,6 +176,6 @@ void vButton_B_Task(void *pvParameters) {
                 xSemaphoreGive(xButton_B_Semaphore);  // Libera o semáforo (botão solto)
             }
             // Lê o botão a cada 100 ms
-            vTaskDelay(pdMS_TO_TICKS(100));  // 
+            vTaskDelay(pdMS_TO_TICKS(100));  //
         }
 }
